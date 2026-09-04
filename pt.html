@@ -435,7 +435,7 @@
     color: rgba(212,200,176,0.35); letter-spacing: 0.06em;
   }
 
-  @media(max-width:900px){
+  @media(max-width:768px){
     .offres-grid { grid-template-columns: 1fr; }
     .offre-card { border-right: none; border-bottom: 1px solid rgba(201,169,110,0.1); }
     .offre-card:last-child { border-bottom: none; }
@@ -873,8 +873,9 @@
     justify-content: space-between;
     box-sizing: border-box;
   }
-  @media(max-width:900px){
-    .temoignage { min-width: calc(100% - 0rem); }
+  @media(max-width:768px){
+    .temoignage { min-width: 100%; font-size: 0.88rem; padding: 1.5rem 1.25rem; }
+    .temoignage-text { font-size: 0.88rem; line-height: 1.65; }
   }
   .temoignage::before {
     content: '\201C';
@@ -939,7 +940,143 @@
   section.s:nth-child(even) { background: #1a1208; }
   section.s:nth-child(odd) { background: var(--noir); }
 
-  </style>
+  
+  @media(max-width:768px){
+    /* Entreprise 3 colonnes → 1 colonne */
+    div[style*="grid-template-columns:1fr 1fr 1fr"] { 
+      display: flex !important; 
+      flex-direction: column !important; 
+    }
+    /* Section titre plus petit */
+    .s-title { font-size: 1.7rem !important; }
+    /* Hero name plus petit */
+    .hero-name { font-size: clamp(3rem, 12vw, 6rem) !important; }
+    /* Nav pills verticaux */
+    .hero-offers { max-width: 100%; }
+    /* Temoignages 1 par 1 */
+    .temoignages-track .temoignage { min-width: 100% !important; }
+    /* Bio 2 colonnes → 1 colonne */
+    .bio-accroche-grid { grid-template-columns: 1fr !important; }
+  }
+
+
+  @media(max-width:768px){
+    nav { padding: 0.75rem 1rem; }
+    .nav-links { display: none; }
+    .nav-right { gap: 0.5rem; }
+    .nav-socials { display: none; }
+    /* Show lang switcher and CTA button */
+    .lang-switcher { display: flex !important; }
+    nav .nav-right > a[style*="background:var(--or)"] { 
+      font-size: 0.6rem !important; 
+      padding: 0.4rem 0.75rem !important;
+    }
+    /* Hamburger button */
+    .nav-hamburger {
+      display: flex !important;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--creme);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    /* Mobile menu open */
+    .nav-links.open {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(22,15,6,0.98);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .nav-links.open li a {
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+    }
+    .nav-close {
+      display: block !important;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 1.5rem;
+      color: var(--creme);
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  }
+  @media(min-width:769px){
+    .nav-hamburger { display: none; }
+    .nav-close { display: none; }
+  }
+
+
+  @media(max-width:768px){
+    /* Entreprise 3col → 1col */
+    #entreprise [style*="grid-template-columns:1fr 1fr 1fr"],
+    #entreprise [style*="grid-template-columns: 1fr 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Éthique 3 panneaux → 1col */
+    #ethique-panneaux,
+    section [style*="grid-template-columns:repeat(3,1fr)"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Citations éthique 2col → 1col */
+    section [style*="grid-template-columns:1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Qui section 2col → 1col */
+    #qui [style*="grid-template-columns:1fr 1.6fr"],
+    #qui [style*="grid-template-columns: 1fr 1.6fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Bio accroche 2col → 1col */
+    section [style*="grid-template-columns:1fr 1fr;min-height:520px"] {
+      grid-template-columns: 1fr !important;
+      min-height: auto !important;
+    }
+    /* Agenda grid → 1col */
+    section [style*="grid-template-columns:1fr auto"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Agenda CTA button full width */
+    #ateliers a[style*="white-space:nowrap"] {
+      width: 100% !important;
+      text-align: center !important;
+      justify-content: center !important;
+    }
+    /* Éthique padding réduit */
+    section [style*="padding:2.5rem 2rem"] {
+      padding: 1.5rem 1.25rem !important;
+    }
+    /* Section padding réduit */
+    .s { padding: 4rem 1.25rem !important; }
+    /* Photos mosaic → stack */
+    .photos-mosaic {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto !important;
+      height: auto !important;
+    }
+    .photo-cell.big, .photo-cell.sm1, .photo-cell.sm2 {
+      grid-column: 1 !important;
+      height: 250px !important;
+    }
+  }
+
+</style>
 </head>
 <body>
 
