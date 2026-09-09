@@ -1,0 +1,6 @@
+# Annabel Barra — annabeljbarra.github.io/annabel-barra/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://annabeljbarra.github.io/annabel-barra/sitemap.xml
