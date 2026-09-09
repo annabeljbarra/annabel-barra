@@ -8,7 +8,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta name="robots" content="index, follow">
-<meta name="version" content="v43-formations-detaillees">
+<meta name="version" content="v44-signature-robuste">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://annabeljbarra.github.io/annabel-barra/">
 <link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/">
@@ -2188,6 +2188,23 @@
   #offres-particulier label:has(input[value="formation"])       { border-left-color: var(--o4-marque) !important; }
   #offres-particulier label:has(input[value="formation"]) input { accent-color: var(--o4-marque) !important; }
   #offres-particulier label:has(input[value="formation"]) > span { color: #67557A !important; }
+
+  /* ── si la signature ne charge pas ──
+     Le texte alternatif s'affiche a sa place. Sans garde-fou il prend
+     la taille du texte courant, passe a la ligne et pousse la barre de
+     navigation hors de l'ecran. On le contraint a la boite du logo. */
+  .nav-brand { max-width: 46vw; overflow: hidden; }
+  .nav-signature {
+    max-width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    line-height: 1.15;
+    /* la barre de nuit inverse l'image par un filtre CSS, et ce filtre
+       s'applique aussi au texte alternatif : on part donc d'un gris
+       moyen, qui ressort creme une fois inverse. */
+    color: #7A7568;
+    overflow: hidden;
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -2358,7 +2375,7 @@
 <nav id="nav">
   <div class="nav-brand">
     <a href="#" style="display:flex;align-items:center;text-decoration:none;">
-      <img src="img/signature.webp" alt="Annabel Barra — coach, facilitation & ingénierie de formation, Algarve & PACA" width="480" height="279" decoding="async" class="nav-signature">
+      <img src="img/signature.webp" alt="Annabel Barra" width="480" height="279" decoding="async" class="nav-signature">
     </a>
   </div>
   <div class="nav-right">
