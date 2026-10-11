@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Annabel Barra — Coach certificada RNCP, facilitação &amp; engenharia de formação. Transições de vida, constelações familiares &amp; sistémicas, inteligência coletiva, acompanhamento em empresa. Algarve &amp; PACA.">
+  <meta property="og:title" content="Annabel Barra — Coach · Facilitação &amp; engenharia de formação">
+  <meta property="og:description" content="Coach de transição certificada RNCP, facilitação &amp; engenharia de formação. Percursos individuais e em grupo, constelações sistémicas, acompanhamento em empresa — entre França e Portugal.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://annabeljbarra.github.io/annabel-barra/pt.html">
+<link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/">
+<link rel="alternate" hreflang="pt" href="https://annabeljbarra.github.io/annabel-barra/pt.html">
+<link rel="alternate" hreflang="x-default" href="https://annabeljbarra.github.io/annabel-barra/">
+<meta property="og:url" content="https://annabeljbarra.github.io/annabel-barra/pt.html">
+<meta property="og:image" content="https://annabeljbarra.github.io/annabel-barra/partage-pt.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Annabel Barra — coach, facilitação &amp; engenharia de formação, França &amp; Portugal · Percurso de transição, constelações, inteligência coletiva, empresa &amp; formação">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://annabeljbarra.github.io/annabel-barra/partage-pt.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2213%22%20fill%3D%22%23160f06%22%2F%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2264%22%20height%3D%225%22%20fill%3D%22%23c9a96e%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2C%27Times%20New%20Roman%27%2Cserif%22%20font-size%3D%2232%22%20fill%3D%22%23c9a96e%22%3Eab%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<meta name="version" content="v51-pied-de-page">
+<title>Annabel Barra — Coach, facilitação &amp; engenharia de formação</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --noir: #EBE4DC;
+    --ardoise: #ECECE8;
+    --charbon: #EDDCD0;
+    --or: #7E4D2A;
+    --or-pale: #A2663A;
+    --creme: #2E2825;
+    --sable: #6E625C;
+    --muted: #6E625C;
+    --terre: #776762;
+    --sage: rgba(119,103,98,0.35);
+    --tile-1: #7E9296;
+    --tile-2: #B0713F;
+    --tile-3: #8A9679;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  :target { scroll-margin-top: 80px; }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--noir);
+    color: var(--creme);
+    overflow-x: hidden;
+  }
+
+  /* ── TILE STRIP ── */
+  .tile-strip {
+    height: 4px;
+    background: repeating-linear-gradient(90deg,
+      var(--tile-1) 0px, var(--tile-1) 20px,
+      var(--or) 20px, var(--or) 40px,
+      var(--tile-2) 40px, var(--tile-2) 60px,
+      var(--tile-3) 60px, var(--tile-3) 80px);
+    position: relative; z-index: 200;
+  }
+
+  /* ── STARS ── */
+  #stars { display: none;
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    overflow: hidden;
+  }
+  .star {
+    position: absolute; border-radius: 50%; background: white;
+    animation: twinkle var(--d,3s) ease-in-out infinite var(--delay,0s);
+    opacity: var(--op,0.3);
+  }
+  @keyframes twinkle {
+    0%,100%{opacity:var(--op,0.3);transform:scale(1)}
+    50%{opacity:calc(var(--op,0.3)*2.5);transform:scale(1.5)}
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 3rem;
+    background: #EDDCD0;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(126,77,42,0.32);
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 24px rgba(119,103,98,0.18);
+  }
+  nav.scrolled { border-bottom-color: rgba(126,77,42,0.40); }
+
+  .nav-brand { display: flex; flex-direction: column; line-height: 1; }
+  .nav-signature {
+    height: 110px;
+    width: auto;
+    filter: none;
+    opacity: 0.75;
+    transition: filter 0.3s, opacity 0.3s;
+  }
+  .nav-signature:hover {
+    filter: sepia(0.35) saturate(1.6) hue-rotate(-6deg);
+    opacity: 1;
+  }
+  .nav-name {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem; font-weight: 400; color: var(--creme); letter-spacing: 0.04em;
+  }
+  .nav-sub {
+    font-size: 0.58rem; font-weight: 500; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--or); margin-top: 0.2rem;
+  }
+
+  .nav-right { display: flex; align-items: center; gap: 2rem; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-links a {
+    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2E2825; text-decoration: none;
+    transition: color 0.2s;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid transparent;
+  }
+  .nav-links a:hover { color: var(--or); border-bottom-color: rgba(126,77,42,0.45); }
+
+
+  .nav-socials { display: flex; gap: 0.85rem; align-items: center; }
+  .lang-switcher {
+    display: flex; align-items: center; gap: 0.4rem;
+    border: 1px solid rgba(126,77,42,0.45);
+    padding: 0.4rem 1rem; border-radius: 20px;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2E2825;
+    margin-left: 1rem;
+  }
+  .lang-active {
+    color: var(--or);
+    border-bottom: 1px solid var(--or);
+    padding-bottom: 1px;
+  }
+  .lang-sep { color:#7E4D2A; }
+  .lang-other {
+    color:#4A423D; text-decoration: none;
+    transition: color 0.2s;
+  }
+  .lang-other:hover { color: var(--or); }
+
+  /* ── SECTIONS WRAPPER ── */
+  .page { position: relative; z-index: 1; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 8rem 3rem 5rem;
+    position: relative; z-index: 1;
+    gap: 3rem;
+    background: linear-gradient(160deg, #EBE4DC 0%, #EDDCD0 100%);
+  }
+  .hero::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--or), transparent);
+  }
+
+  /* TOP */
+  .hero-top {
+    display: flex; flex-direction: column;
+    align-items: center; gap: 0;
+    animation: fadeUp 0.8s ease 0.2s both;
+    max-width: 700px;
+  }
+  .hero-location {
+    font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--or); font-weight: 500; margin-bottom: 1.5rem;
+    line-height: 2.2;
+  }
+  .hero-title { font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:#7E4D2A; font-family:Outfit,sans-serif; font-weight:400; margin-top:0.4rem; margin-bottom:0.2rem; }
+  .hero-name {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 400; color: var(--creme);
+    line-height: 1.05; letter-spacing: -0.02em;
+    margin-bottom: 0.6rem;
+  }
+  .hero-name em { font-style: italic; color: var(--or); }
+  .hero-bio { font-size:0.82rem; font-weight:300; color:#3C352F; line-height:1.7; max-width:480px; margin:0.75rem 0 1.25rem; }
+
+  .hero-sub {
+    font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color:#7E4D2A; margin-bottom: 1.75rem;
+  }
+  .hero-tagline {
+    font-family: 'Libre Baskerville', serif; font-style: italic;
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    color: #5A4A3E; font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* MIDDLE */
+  .hero-middle {
+    animation: fadeUp 0.8s ease 0.5s both;
+    width: 100%; max-width: 560px;
+  }
+  .hero-offers {
+    display: flex; flex-direction: column; gap: 2px;
+    background: rgba(219,189,168,0.18);
+    border: 1px solid rgba(126,77,42,0.32);
+    border-radius: 4px; overflow: hidden;
+    width: 100%;
+  }
+  .hero-offer-pill {
+    background: rgba(247,243,238,0.6);
+    padding: 1.4rem 2rem;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center;
+    gap: 0.35rem;
+    transition: background 0.2s ease;
+    cursor: pointer;
+  }
+  .hero-offer-pill:hover { background: rgba(219,189,168,0.15); }
+  .hero-offer-pill.active { background: rgba(219,189,168,0.26); border-left: 3px solid var(--or); border-top: 1px solid rgba(126,77,42,0.45); }
+  .hop-left { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+  .hop-tag { font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; }
+  .hero-offer-pill.active .hop-tag { color: var(--or); }
+  .hero-offer-pill:not(.active) .hop-tag { color:#7E4D2A; }
+  .hop-name { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 400; color: var(--creme); line-height: 1.25; }
+  .hero-offer-pill:not(.active) .hop-name { color: #4A423D; }
+  .hero-offer-pill.active .hop-name { color: var(--or); font-weight: 500; }
+  .hop-num { display: none; }
+
+  /* BOTTOM */
+  .hero-bottom {
+    display: flex; flex-direction: column;
+    align-items: center; gap: 1.75rem;
+    animation: fadeUp 0.8s ease 0.8s both;
+    max-width: 560px;
+  }
+  .hero-desc {
+    font-size: 0.9rem; color: #2E2825; font-weight: 300;
+    line-height: 1.85; text-align: center;
+  }
+  .hero-cta-group {
+    display: flex; gap: 0.85rem; flex-wrap: wrap; justify-content: center;
+  }
+
+    /* ── BUTTONS ── */
+  .btn-primary {
+    background: var(--or); color: var(--noir);
+    padding: 0.9rem 2.2rem; font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; text-decoration: none;
+    border: 1px solid var(--or); border-radius: 8px; transition: all 0.25s ease;
+  }
+  .btn-primary:hover { background: var(--or-pale); border-color: var(--or-pale); }
+  .btn-ghost {
+    border: 1px solid rgba(126,77,42,0.45); color: #3C352F;
+    padding: 0.9rem 2.2rem; font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem; font-weight: 400; letter-spacing: 0.12em;
+    text-transform: uppercase; text-decoration: none; border-radius: 8px;
+    transition: all 0.25s ease;
+  }
+  .btn-ghost:hover { border-color: var(--or); color: var(--or); }
+
+  /* ── GOLD LINE ── */
+  .gold-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(219,189,168,0.50), transparent);
+    position: relative; z-index: 1;
+  }
+
+  /* ── SECTION BASE ── */
+  .s { padding: 7rem 2rem; position: relative; z-index: 1; }
+  .s-inner { max-width: 1060px; margin: 0 auto; }
+
+  .eyebrow { font-family:'Libre Baskerville',serif; font-style:italic; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--or); font-weight:400; margin-bottom:0.75rem; }
+  .eyebrow::before { content: ''; display: inline-block; width: 24px; height: 1px; background: var(--or); }
+
+  .s-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    font-weight: 400; line-height: 1.25;
+    color: var(--creme); margin-bottom: 3rem; max-width: 640px;
+  }
+  .s-title em { font-style: italic; color: var(--or); }
+
+
+  /* ── OFFRES 3 COLONNES ── */
+  .offres-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid rgba(126,77,42,0.24);
+    align-items: stretch;
+  }
+
+  .offre-card {
+    position: relative;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-right: 1px solid rgba(126,77,42,0.16);
+    align-items: stretch;
+  }
+  .offre-card:hover { box-shadow: 0 8px 32px rgba(119,103,98,0.15); transform: translateY(-2px); }
+  .offre-card:last-child { border-right: none; }
+
+  /* Couleur de barre top par offre */
+  .offre-card::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .offre-card.c1::before { background: linear-gradient(90deg, #7E4D2A, #A2663A); }
+  .offre-card.c2::before { background: linear-gradient(90deg, #59654A, #59654A); }
+  .offre-card.c3::before { background: linear-gradient(90deg, #4F6165, #4F6165); }
+
+  /* Hover — légère élévation */
+  .offre-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(119,103,98,0.18); z-index: 2; }
+
+  /* Card featured (parcours) */
+  .offre-card.c1 { background: linear-gradient(160deg, #F7F3EE 0%, #F7F3EE 100%); }
+  .offre-card.c2 { background: linear-gradient(160deg, #F7F3EE 0%, #F7F3EE 100%); }
+  .offre-card.c3 { background: linear-gradient(160deg, #F7F3EE 0%, #F7F3EE 100%); }
+
+  /* Numéro filigrane */
+  .offre-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 7rem; font-weight: 700;
+    line-height: 1; letter-spacing: -0.04em;
+    position: absolute; top: -0.5rem; right: 1.25rem;
+    pointer-events: none; user-select: none;
+  }
+  .c1 .offre-num { color: rgba(126,77,42,0.090); }
+  .c2 .offre-num { color: rgba(89,101,74,0.096); }
+  .c3 .offre-num { color: rgba(79,97,101,0.096); }
+
+  /* Contenu */
+  .offre-body { padding: 2.5rem 2rem 0; flex: 1; position: relative; display: flex; flex-direction: column; }
+
+  .offre-tag {
+    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 1.25rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .c1 .offre-tag { color: var(--or); }
+  .c2 .offre-tag { color: #59654A; }
+  .c3 .offre-tag { color: #4F6165; }
+  .offre-tag::before {
+    content: ''; display: inline-block;
+    width: 20px; height: 1px; flex-shrink: 0;
+  }
+  .c1 .offre-tag::before { background: var(--or); }
+  .c2 .offre-tag::before { background: #59654A; }
+  .c3 .offre-tag::before { background: #4F6165; }
+
+  .offre-accroche { font-family:'Libre Baskerville',serif; font-style:italic; font-size:0.9rem; color:#7E4D2A; margin-bottom:0.5rem; line-height:1.5; }
+  .offre-name {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.6rem;
+    font-weight: 400; line-height: 1.2;
+    color: var(--creme); margin-bottom: 1rem;
+  }
+  .offre-name em { font-style: italic; }
+  .c1 .offre-name em { color: var(--or); }
+  .c2 .offre-name em { color: #59654A; }
+  .c3 .offre-name em { color: #4F6165; }
+
+  .offre-promise {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic; font-size: 0.85rem; font-weight: 400;
+    color: #3C352F; line-height: 1.65;
+    margin-bottom: 1.5rem; padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(119,103,98,0.120);
+  }
+
+  .offre-list {
+    list-style: none;
+    display: flex; flex-direction: column;
+    flex: 1;
+  }
+  .offre-list li {
+    font-size: 0.8rem; font-weight: 300;
+    color: #3C352F;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid rgba(119,103,98,0.096);
+    display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.5;
+  }
+  .offre-list li:last-child { border-bottom: none; }
+  .offre-list li::before {
+    content: ''; width: 5px; height: 5px; border-radius: 50%;
+    flex-shrink: 0; margin-top: 6px;
+  }
+  .c1 .offre-list li::before { background: rgba(219,189,168,0.50); }
+  .c2 .offre-list li::before { background: rgba(89,101,74,0.20); }
+  .c3 .offre-list li::before { background: rgba(79,97,101,0.20); }
+
+  /* Footer carte */
+  .offre-footer {
+    padding: 1.75rem 2rem;
+    border-top: 1px solid rgba(119,103,98,0.120);
+    display: flex; flex-direction: column; gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .offre-prix-row { display: flex; align-items: baseline; gap: 0.35rem; flex-wrap: wrap; }
+  .prix-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem; font-weight: 400; line-height: 1;
+  }
+  .c1 .prix-num { color: var(--or); }
+  .c2 .prix-num { color: #59654A; }
+  .c3 .prix-num { color: #4F6165; }
+  .prix-unit { font-size: 0.72rem; color: var(--muted); font-weight: 300; }
+
+  .offre-cta { border-radius:8px;
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 0.5rem; width: 100%;
+    padding: 0.85rem 1rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; text-decoration: none;
+    border-radius: 8px; transition: all 0.25s ease;
+  }
+  .offre-cta::after { content: '→'; font-weight: 400; }
+  .c1 .offre-cta { border-radius:8px; background: rgba(219,189,168,0.26); color: var(--or); border: 1px solid rgba(126,77,42,0.40); }
+  .c1 .offre-cta:hover { background: var(--or); color: var(--noir); }
+  .c2 .offre-cta { border-radius:8px; background: rgba(89,101,74,0.11); color: #59654A; border: 1px solid rgba(89,101,74,0.24); }
+  .c2 .offre-cta:hover { background: #59654A; color: var(--creme); }
+  .c3 .offre-cta { border-radius:8px; background: rgba(79,97,101,0.11); color: #4F6165; border: 1px solid rgba(79,97,101,0.24); }
+  .c3 .offre-cta:hover { background: #4F6165; color: var(--creme); }
+
+  .offre-badge {
+    font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.2rem 0.65rem; border-radius: 20px;
+  }
+  .c1 .offre-badge { background: rgba(219,189,168,0.22); border: 1px solid rgba(126,77,42,0.32); color: var(--or-pale); }
+
+  .offre-lieux { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .lieu-tag {
+    font-size: 0.58rem; padding: 0.18rem 0.55rem; border-radius: 10px;
+    background: rgba(119,103,98,0.096); border: 1px solid rgba(119,103,98,0.168);
+    color:#4A423D; letter-spacing: 0.06em;
+  }
+
+  @media(max-width:768px){
+    .offres-grid { grid-template-columns: 1fr; }
+    .offre-card { border-right: none; border-bottom: 1px solid rgba(126,77,42,0.16); }
+    .offre-card:last-child { border-bottom: none; }
+    .offre-card:hover { transform: none; }
+  }
+
+
+  /* ── TARIFS ── */
+  .tarifs-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .tarif-block {
+    border: 1px solid rgba(119,103,98,0.144);
+    padding: 2.5rem; background: rgba(119,103,98,0.048);
+    transition: border-color 0.2s;
+  }
+  .tarif-block:hover { border-color: rgba(126,77,42,0.40); }
+  .tarif-block.hl { border-color: rgba(126,77,42,0.32); background: rgba(219,189,168,0.09); }
+  .t-label {
+    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--or); font-weight: 500; margin-bottom: 0.85rem;
+  }
+  .t-price { display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 1rem; }
+  .t-num {
+    font-family: 'Libre Baskerville', serif; font-size: 3.2rem;
+    font-weight: 400; color: var(--or); line-height: 1;
+  }
+  .t-unit { font-size: 0.73rem; color: var(--muted); font-weight: 300; }
+  .t-desc {
+    font-size: 0.78rem; font-weight: 300; color: var(--muted);
+    line-height: 1.7; border-top: 1px solid rgba(119,103,98,0.120);
+    padding-top: 1rem; margin-top: 0.5rem;
+  }
+
+  /* ── CADRE ── */
+  .cadre-pillars {
+    display: grid; grid-template-columns: repeat(4,1fr);
+    gap: 1px; background: rgba(119,103,98,0.120);
+    border: 1px solid rgba(119,103,98,0.120); margin-bottom: 3rem;
+  }
+  .c-pillar {
+    background: var(--noir); padding: 2.5rem 1.75rem;
+    transition: background 0.2s;
+  }
+  .c-pillar:hover { background: var(--ardoise); }
+  .c-icon { font-size: 1.6rem; margin-bottom: 1.2rem; display: block; }
+  .c-name {
+    font-family: 'Libre Baskerville', serif; font-size: 1rem;
+    color: #3C352F; margin-bottom: 0.5rem;
+  }
+  .c-text { font-size: 0.74rem; font-weight: 300; color: #4A423D; line-height: 1.65; }
+
+  .cadre-quote {
+    font-family: 'Libre Baskerville', serif; font-style: italic;
+    font-size: 1.35rem; font-weight: 400;
+    color: #3C352F; line-height: 1.65;
+    max-width: 660px; border-left: 2px solid var(--or); padding-left: 2rem;
+  }
+
+  /* ── POUR QUI ── */
+  .pq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+  .pq-list { list-style: none; margin-top: 2rem; }
+  .pq-list li {
+    font-size: 0.83rem; font-weight: 300;
+    color: #4A423D;
+    padding: 0.75rem 0; border-bottom: 1px solid rgba(119,103,98,0.120);
+    display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.55;
+  }
+  .pq-list li:last-child { border-bottom: none; }
+  .pq-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--or); flex-shrink: 0; margin-top: 8px; }
+  .pq-note {
+    margin-top: 2rem; padding: 1.4rem 1.5rem;
+    border: 1px solid rgba(126,77,42,0.24);
+    background: rgba(219,189,168,0.09);
+    font-size: 0.76rem; font-style: italic;
+    color: #3C352F; line-height: 1.7;
+  }
+
+  /* ── PHOTOS ── */
+  .photos-mosaic {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 420px;
+    gap: 6px;
+  }
+  .photo-cell {
+    background: var(--ardoise); position: relative;
+    overflow: hidden; cursor: pointer;
+  }
+  .photo-cell img { width:100%; height:100%; object-fit:cover; display:block; transition: transform 0.5s ease; }
+  .photo-cell:hover img { transform: scale(1.06); }
+  .photo-cell.big { grid-column: 1; grid-row: 1; }
+  .photo-cell.sm1 { grid-column: 2; grid-row: 1; }
+  .photo-cell.sm2 { grid-column: 3; grid-row: 1; }
+  .photo-cell.wide { grid-column: 2/4; grid-row: 2; }
+
+  .ph-placeholder {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 0.75rem;
+    background: var(--ardoise);
+  }
+  .ph-icon { font-size: 2rem; opacity: 0.2; }
+  .ph-text {
+    font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); opacity: 0.5; text-align: center; padding: 0 1rem; line-height: 1.6;
+  }
+  .ph-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(to top, rgba(236,236,232,0.75), transparent);
+    font-size: 0.68rem; color: #3C352F;
+    font-style: italic; opacity: 0; transition: opacity 0.3s;
+  }
+  .photo-cell:hover .ph-caption { opacity: 1; }
+
+  
+  .slider-nav { display: flex; gap: 0.75rem; margin-top: 2rem; align-items: center; }
+  .s-btn {
+    width: 40px; height: 110px;
+    border: 1px solid rgba(119,103,98,0.240); background: transparent;
+    cursor: pointer; color: var(--muted); font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s; border-radius: 8px;
+  }
+  .s-btn:hover { border-color: var(--or); color: var(--or); }
+  .s-dots { display: flex; gap: 0.5rem; margin-left: 1rem; }
+  .s-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(119,103,98,0.250); border: none; cursor: pointer;
+    transition: background 0.2s; padding: 0;
+  }
+  .s-dot.on { background: var(--or); }
+
+  /* ── LECTURES ── */
+  .lectures-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; }
+  .livre {
+    background: var(--ardoise); border: 1px solid rgba(119,103,98,0.120);
+    padding: 1.75rem 1.5rem; transition: all 0.2s;
+  }
+  .livre:hover { background: #ECECE8; border-color: rgba(126,77,42,0.32); }
+  .livre-spine { width: 3px; height: 36px; margin-bottom: 1.25rem; border-radius: 8px; }
+  .livre-title {
+    font-family: 'Libre Baskerville', serif; font-size: 1rem;
+    font-weight: 400; color: #3C352F; line-height: 1.3; margin-bottom: 0.35rem;
+  }
+  .livre-author { font-size: 0.68rem; font-weight: 300; color: #4A423D; margin-bottom: 0.9rem; }
+  .livre-note { font-size: 0.73rem; font-weight: 300; color: #4A423D; line-height: 1.6; font-style: italic; }
+  .livre-tag {
+    display: inline-block; font-size: 0.56rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.18rem 0.55rem; border-radius: 20px; margin-top: 1rem;
+  }
+
+  /* ── QUI SUIS-JE ── */
+  .qui-layout { display: grid; grid-template-columns: 1fr 1.65fr; gap: 6rem; align-items: start; }
+  .qui-photo-frame {
+    width: 100%; aspect-ratio: 3/4;
+    background: var(--ardoise); position: relative; overflow: hidden;
+  }
+  .qui-photo-frame img { width:100%; height:100%; object-fit:cover; display:block; }
+  .qui-ph-placeholder {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 1rem;
+  }
+  .qui-ph-icon { font-size: 3rem; opacity: 0.15; }
+  .qui-ph-text {
+    font-size: 0.67rem; color: var(--muted); opacity: 0.45;
+    text-align: center; padding: 0 1.5rem; line-height: 1.6;
+  }
+  .qui-location {
+    margin-top: 1.25rem; font-size: 0.7rem; font-weight: 400;
+    letter-spacing: 0.1em; color: var(--muted);
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .qui-langs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+  .lang-tag {
+    font-size: 0.62rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(126,77,42,0.32); color: var(--muted); border-radius: 20px;
+  }
+  .qui-intro {
+    font-family: 'Libre Baskerville', serif; font-style: italic;
+    font-size: 1.35rem; font-weight: 400;
+    color: #3C352F; line-height: 1.65; margin-bottom: 2rem;
+  }
+  .qui-p {
+    font-size: 0.85rem; font-weight: 300;
+    color: #3C352F; line-height: 1.85; margin-bottom: 1.25rem;
+  }
+  .qui-p strong { color: #2E2825; font-weight: 500; }
+  .certifs-block {
+    margin-top: 2.5rem; border-top: 1px solid rgba(119,103,98,0.144);
+    padding-top: 2rem;
+  }
+  .certifs-label {
+    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--or); font-weight: 500; margin-bottom: 1.25rem;
+  }
+  .certif-item {
+    display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 0.75rem;
+  }
+  .certif-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--or); flex-shrink: 0; margin-top: 8px; }
+  .certif-text { font-size: 0.78rem; font-weight: 300; color: #3C352F; line-height: 1.5; }
+
+  /* ── CTA ── */
+  .cta-s {
+    text-align: center; padding: 8rem 2rem;
+    position: relative; z-index: 1;
+  }
+  .cta-s::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 1px; height: 60px;
+    background: linear-gradient(to bottom, transparent, rgba(219,189,168,0.50));
+  }
+  .cta-s .s-title { margin: 0 auto 1.5rem; text-align: center; }
+  .cta-s .eyebrow { font-family:'Libre Baskerville',serif; font-style:italic; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--or); font-weight:400; margin-bottom:0.75rem; }
+  .cta-s .eyebrow::before { display: none; }
+  .cta-desc {
+    font-size: 0.85rem; font-weight: 300; color: var(--muted);
+    max-width: 400px; margin: 0 auto 3rem; line-height: 1.8;
+  }
+  .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .cta-fine {
+    margin-top: 2rem; font-size: 0.66rem;
+    color:#6E625C; letter-spacing: 0.08em;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #ECECE8;
+    border-top: 1px solid rgba(126,77,42,0.19);
+    padding: 2.5rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem; position: relative; z-index: 1;
+  }
+  .footer-brand {
+    font-family: 'Libre Baskerville', serif; font-size: 0.95rem;
+    color: #4A423D;
+  }
+  .footer-brand span { color: var(--or); }
+  .footer-info { font-size: 0.65rem; color:#544B45; letter-spacing: 0.08em; }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:900px){
+    nav { padding: 0.75rem 1.25rem; }
+    .nav-links { display: none; }
+    .nav-signature { height: 70px; }
+    .s { padding: 6rem 1.5rem; }
+    .tarifs-wrap { grid-template-columns: 1fr; }
+    .cadre-pillars { grid-template-columns: 1fr 1fr; }
+    .pq-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .mentions-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+    .bio-accroche-grid { grid-template-columns: 1fr !important; }
+    .hero-bio-block { flex-direction: column; text-align: center; }
+    .photos-mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .photo-cell.big { grid-column: 1/3; grid-row: 1; height: 260px; }
+    .photo-cell.sm1 { grid-column: 1; grid-row: 2; height: 180px; }
+    .photo-cell.sm2 { grid-column: 2; grid-row: 2; height: 180px; }
+    .photo-cell.wide { grid-column: 1/3; grid-row: 3; height: 200px; }
+    .lectures-grid { grid-template-columns: 1fr 1fr; }
+    .qui-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .qui-photo-frame { aspect-ratio: 4/3; }
+    footer { flex-direction: column; text-align: center; }
+  }
+
+  /* ── SOCIAL ── */
+  .footer-social { display: flex; gap: 1rem; align-items: center; }
+  .social-link {
+    color:#544B45; transition: color 0.2s;
+    display: flex; align-items: center;
+  }
+  .social-link:hover { color: var(--or); }
+
+  /* ── RATING BANNER ── */
+  .rating-banner {
+    background: rgba(219,189,168,0.13);
+    border-top: 1px solid rgba(126,77,42,0.19);
+    border-bottom: 1px solid rgba(126,77,42,0.19);
+    padding: 2rem 3rem;
+    position: relative; z-index: 1;
+  }
+  .rating-inner {
+    max-width: 1060px; margin: 0 auto;
+    display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rating-score {
+    display: flex; align-items: baseline; gap: 0.4rem; flex-shrink: 0;
+  }
+  .rating-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5rem; font-weight: 400; color: var(--or); line-height: 1;
+  }
+  .rating-denom { font-size: 1rem; color: var(--muted); font-weight: 300; }
+  .rating-meta { }
+  .rating-stars { color: var(--or); font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 0.3rem; }
+  .rating-source { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+  .rating-verbatims {
+    display: flex; gap: 2rem; flex-wrap: wrap; flex: 1; min-width: 0;
+  }
+  .rating-verbatim {
+    flex: 1; min-width: 200px;
+    border-left: 1px solid rgba(126,77,42,0.32);
+    padding-left: 1.25rem;
+  }
+  .verbatim-text {
+    font-family: 'Libre Baskerville', serif; font-style: italic;
+    font-size: 0.85rem; color: #3C352F; line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+  .verbatim-ctx { font-size: 0.62rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* ── LEAD MAGNET ── */
+  .lead-magnet {
+    background: var(--ardoise);
+    border: 1px solid rgba(126,77,42,0.24);
+    padding: 3rem 2.5rem;
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .lm-card {
+    background: rgba(119,103,98,0.048);
+    border: 1px solid rgba(119,103,98,0.120);
+    padding: 1.75rem; transition: all 0.2s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .lm-card:hover { border-color: rgba(126,77,42,0.32); background: rgba(219,189,168,0.07); }
+  .lm-icon { font-size: 1.5rem; }
+  .lm-tag {
+    font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--or); font-weight: 500;
+  }
+  .lm-title {
+    font-family: 'Libre Baskerville', serif; font-size: 1.05rem;
+    font-weight: 400; color: var(--creme); line-height: 1.3;
+  }
+  .lm-desc { font-size: 0.75rem; font-weight: 300; color: var(--muted); line-height: 1.65; flex: 1; }
+  .lm-cta {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--or);
+    text-decoration: none; border-bottom: 1px solid rgba(126,77,42,0.40);
+    padding-bottom: 1px; transition: border-color 0.2s; align-self: flex-start;
+  }
+  .lm-cta:hover { border-color: var(--or); }
+  .lm-cta::after { content: '→'; }
+
+  @media(max-width:900px){
+    .rating-inner { gap: 2rem; }
+    .rating-verbatims { flex-direction: column; }
+    .lead-magnet { grid-template-columns: 1fr; }
+    .footer-social { justify-content: center; }
+  }
+
+
+  
+  .temoignage {
+    background: #F7F3EE;
+    border: 1px solid rgba(119,103,98,0.168);
+    border-top: 3px solid rgba(126,77,42,0.45);
+    padding: 2rem 2.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .temoignage::before {
+    content: '\201C';
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
+    color: var(--or);
+    opacity: 0.2;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    line-height: 1;
+  }
+  .temoignage-text {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #2E2825;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .temoignage-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid rgba(119,103,98,0.144);
+    padding-top: 1.25rem;
+  }
+  .t-avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(219,189,168,0.33);
+    border: 1px solid rgba(126,77,42,0.40);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.72rem; font-weight: 600;
+    color: var(--or); flex-shrink: 0;
+    font-family: Outfit, sans-serif;
+  }
+  .t-name {
+    font-size: 0.82rem; font-weight: 500;
+    color: #2E2825;
+  }
+  .t-ctx {
+    font-size: 0.72rem; font-weight: 300;
+    color:#4A423D;
+    letter-spacing: 0.04em;
+  }
+  @media(max-width:900px) {
+    }
+
+  
+  /* ── TÉMOIGNAGES CAROUSEL ── */
+  .temoignages-wrap { position: relative; overflow: hidden; }
+  .temoignages-track {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+  }
+  .temoignage {
+    min-width: calc(50% - 0.75rem);
+    flex-shrink: 0;
+    background: var(--ardoise);
+    border: 1px solid rgba(119,103,98,0.168);
+    padding: 2rem 2.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  @media(max-width:768px){
+    .temoignage { min-width: 100%; font-size: 0.88rem; padding: 1.5rem 1.25rem; }
+    .temoignage-text { font-size: 0.88rem; line-height: 1.65; }
+  }
+  .temoignage::before {
+    content: '\201C';
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
+    color: var(--or);
+    opacity: 0.18;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    line-height: 1;
+  }
+  .temoignage-text {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #2E2825;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .temoignage-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid rgba(119,103,98,0.144);
+    padding-top: 1.25rem;
+  }
+  .t-avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(219,189,168,0.26);
+    border: 1px solid rgba(126,77,42,0.40);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.72rem; font-weight: 600;
+    color: var(--or); flex-shrink: 0;
+  }
+  .t-name { font-size: 0.82rem; font-weight: 500; color: #2E2825; }
+  .t-ctx { font-size: 0.72rem; font-weight: 300; color:#4A423D; letter-spacing: 0.04em; }
+  .carousel-nav {
+    display: flex; justify-content: center; align-items: center;
+    gap: 1rem; margin-top: 2rem;
+  }
+  .carousel-btn {
+    width: 40px; height: 40px;
+    border: 1px solid rgba(126,77,42,0.40);
+    background: transparent; color: var(--or);
+    cursor: pointer; font-size: 1.1rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .carousel-btn:hover { background: rgba(219,189,168,0.22); }
+  .carousel-dots { display: flex; gap: 0.5rem; align-items: center; }
+  .cdot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: rgba(219,189,168,0.50);
+    transition: all 0.2s; cursor: pointer;
+  }
+  .cdot.active { background: var(--or); transform: scale(1.3); }
+
+  
+  section.s:nth-child(even) { background: #ECECE8; }
+  section.s:nth-child(odd) { background: var(--noir); }
+
+  
+  @media(max-width:768px){
+    /* Entreprise 3 colonnes → 1 colonne */
+    div[style*="grid-template-columns:1fr 1fr 1fr"] { 
+      display: flex !important; 
+      flex-direction: column !important; 
+    }
+    /* Section titre plus petit */
+    .s-title { font-size: 1.7rem !important; }
+    /* Hero name plus petit */
+    .hero-name { font-size: clamp(3rem, 12vw, 6rem) !important; }
+    /* Nav pills verticaux */
+    .hero-offers { max-width: 100%; }
+    /* Temoignages 1 par 1 */
+    .temoignages-track .temoignage { min-width: 100% !important; }
+    /* Bio 2 colonnes → 1 colonne */
+    .bio-accroche-grid { grid-template-columns: 1fr !important; }
+  }
+
+
+  @media(max-width:768px){
+    nav { padding: 0.75rem 1rem; }
+    .nav-links { display: none; }
+    .nav-right { gap: 0.5rem; }
+    .nav-socials { display: none; }
+    /* Show lang switcher and CTA button */
+    .lang-switcher { display: flex !important; }
+    nav .nav-right > a[style*="background:var(--or)"] { 
+      font-size: 0.6rem !important; 
+      padding: 0.4rem 0.75rem !important;
+    }
+    /* Hamburger button */
+    .nav-hamburger {
+      display: flex !important;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--creme);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    /* Mobile menu open */
+    .nav-links.open {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #EDDCD0;
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .nav-links.open li a {
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+    }
+    .nav-close {
+      display: block !important;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 1.5rem;
+      color: var(--creme);
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  }
+  @media(min-width:769px){
+    .nav-hamburger { display: none; }
+    .nav-close { display: none; }
+  }
+
+
+  @media(max-width:768px){
+    /* Entreprise 3col → 1col */
+    #entreprise [style*="grid-template-columns:1fr 1fr 1fr"],
+    #entreprise [style*="grid-template-columns: 1fr 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Éthique 3 panneaux → 1col */
+    #ethique-panneaux,
+    section [style*="grid-template-columns:repeat(3,1fr)"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Citations éthique 2col → 1col */
+    section [style*="grid-template-columns:1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Qui section 2col → 1col */
+    #qui [style*="grid-template-columns:1fr 1.6fr"],
+    #qui [style*="grid-template-columns: 1fr 1.6fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Bio accroche 2col → 1col */
+    section [style*="grid-template-columns:1fr 1fr;min-height:520px"] {
+      grid-template-columns: 1fr !important;
+      min-height: auto !important;
+    }
+    /* Agenda grid → 1col */
+    section [style*="grid-template-columns:1fr auto"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* Agenda CTA button full width */
+    #ateliers a[style*="white-space:nowrap"] {
+      width: 100% !important;
+      text-align: center !important;
+      justify-content: center !important;
+    }
+    /* Éthique padding réduit */
+    section [style*="padding:2.5rem 2rem"] {
+      padding: 1.5rem 1.25rem !important;
+    }
+    /* Section padding réduit */
+    .s { padding: 4rem 1.25rem !important; }
+    /* Photos mosaic → stack */
+    .photos-mosaic {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto !important;
+      height: auto !important;
+    }
+    .photo-cell.big, .photo-cell.sm1, .photo-cell.sm2 {
+      grid-column: 1 !important;
+      height: 250px !important;
+    }
+  }
+
+
+  /* ═══════════════════════════════════════════════════════════
+     CORRECTIF NAV RESPONSIVE — 04/09/2026
+     1. la barre de nav débordait  ->  FR/PT coupé (mobile ET desktop < 1240px)
+     2. entre 769px et 900px : ni liens, ni hamburger  ->  aucun menu
+     Ce bloc est en fin de feuille de style : il surcharge ce qui précède.
+     Pour revenir en arrière, il suffit de le supprimer.
+     ═══════════════════════════════════════════════════════════ */
+
+  /* --- 0. backdrop-filter retiré : il transformait la <nav> en bloc conteneur,
+     ce qui empêchait l'overlay du menu mobile (position:fixed) de couvrir
+     l'écran — il ne faisait que la hauteur de la barre. Le fond est de toute
+     façon opaque à 98%, le flou n'apportait rien. --- */
+  nav {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #EDDCD0;
+  }
+
+  /* --- 1. La nav ne déborde plus jamais --- */
+  nav {
+    padding-left: clamp(1rem, 3vw, 3rem);
+    padding-right: clamp(1rem, 3vw, 3rem);
+    gap: 1rem;
+  }
+  .nav-brand { flex-shrink: 1; min-width: 0; }
+  .nav-signature {
+    height: clamp(40px, 5.4vw, 74px);
+    width: auto;
+  }
+  .nav-right { gap: clamp(0.5rem, 1.4vw, 1.75rem); flex-wrap: nowrap; min-width: 0; }
+  .nav-links { gap: clamp(0.75rem, 1.6vw, 2rem); flex-wrap: nowrap; }
+  .nav-links a { white-space: nowrap; }
+  .nav-socials { flex-shrink: 0; }
+  .lang-switcher { flex-shrink: 0; margin-left: 0; white-space: nowrap; }
+
+  /* Les ancres ne passent plus sous la barre fixe */
+  :target { scroll-margin-top: 130px; }
+
+  /* --- 2. Un seul seuil pour le menu : hamburger dès 1099px --- */
+  @media (max-width: 1199px) {
+    .nav-links { display: none; }
+    .nav-socials { display: none; }
+    .nav-hamburger {
+      display: flex !important;
+      flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 6px;
+      background: none; border: none;
+      position: relative; z-index: 1001; flex-shrink: 0;
+    }
+    .nav-hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--creme); border-radius: 2px;
+    }
+    .nav-links.open {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed; inset: 0;
+      background: var(--noir);
+      z-index: 1000;
+      align-items: center; justify-content: center;
+      gap: 2rem; padding: 3rem 2rem; overflow-y: auto;
+    }
+    .nav-links.open li { list-style: none; }
+    .nav-links.open li a { font-size: 1.15rem; letter-spacing: 0.15em; }
+    /* ✕ à gauche : la place à droite est prise par FR/PT */
+    .nav-close {
+      display: block !important;
+      position: absolute; top: 1.25rem; left: 1.25rem; right: auto;
+      font-size: 1.7rem; color: var(--creme);
+      background: none; border: none; cursor: pointer;
+      z-index: 1001; line-height: 1;
+    }
+  }
+  @media (min-width: 1200px) {
+    .nav-hamburger, .nav-close { display: none !important; }
+  }
+  /* Réseaux sociaux : seulement quand il reste vraiment de la place */
+  @media (max-width: 1279px) { .nav-socials { display: none; } }
+
+  /* --- 3. Mobile : logo, CTA et FR/PT tiennent sur 360px --- */
+  @media (max-width: 768px) {
+    :target { scroll-margin-top: 80px; }
+    .nav-signature { height: 46px; }
+    .lang-switcher {
+      display: flex !important;
+      padding: 0.3rem 0.6rem; font-size: 0.62rem;
+      gap: 0.3rem; letter-spacing: 0.1em;
+    }
+    nav .nav-right > a[href*="calendly"] {
+      font-size: 0.55rem !important;
+      padding: 0.4rem 0.65rem !important;
+      letter-spacing: 0.06em !important;
+      white-space: nowrap;
+    }
+  }
+  @media (max-width: 400px) {
+    .nav-signature { height: 38px; }
+    nav .nav-right > a[href*="calendly"] {
+      font-size: 0.5rem !important;
+      padding: 0.35rem 0.5rem !important;
+    }
+  }
+  /* Très petits écrans (iPhone SE, 320px) : le CTA passe sous le logo en taille
+     minimale pour que le burger et FR/PT restent entiers. */
+  @media (max-width: 359px) {
+    nav { padding-left: 0.6rem; padding-right: 0.6rem; gap: 0.4rem; }
+    .nav-right { gap: 0.4rem; }
+    .nav-signature { height: 32px; }
+    .lang-switcher { padding: 0.25rem 0.45rem; font-size: 0.55rem; letter-spacing: 0.06em; }
+    nav .nav-right > a[href*="calendly"] {
+      font-size: 0.45rem !important;
+      padding: 0.3rem 0.4rem !important;
+      letter-spacing: 0 !important;
+    }
+  }
+
+  /* --- 4. Barre de nav pendant que le menu plein écran est ouvert :
+     on masque le burger et le CTA (le ✕ les remplace) et on garde
+     FR/PT cliquable au-dessus de l'overlay. --- */
+  nav.menu-open .nav-hamburger,
+  nav.menu-open .nav-right > a[href*="calendly"] {
+    opacity: 0;
+    pointer-events: none;
+  }
+  nav.menu-open .lang-switcher {
+    position: relative;
+    z-index: 1002;
+  }
+  /* ═══════ FIN CORRECTIF NAV ═══════ */
+
+
+  /* ═══ SECTION ACTUALITÉ / À LA UNE ═══ */
+  .actu-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    gap: 3.5rem;
+    align-items: center;
+  }
+  .actu-visuel { margin: 0; }
+  .actu-visuel img {
+    display: block; width: 100%; height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(126,77,42,0.40);
+    box-shadow: 0 24px 60px rgba(119,103,98,0.18);
+  }
+  .actu-badge {
+    display: inline-block;
+    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 600; color: var(--noir); background: var(--or);
+    padding: 0.35rem 0.85rem; border-radius: 20px; margin-bottom: 1.25rem;
+  }
+  .actu-titre {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(1.45rem, 3vw, 2.1rem);
+    font-weight: 400; line-height: 1.25;
+    color: var(--creme); margin-bottom: 0.75rem;
+  }
+  .actu-titre em { font-style: italic; color: var(--or); }
+  .actu-accroche {
+    font-family: 'Libre Baskerville', serif; font-style: italic;
+    font-size: 1rem; color: #3C352F;
+    line-height: 1.6; margin-bottom: 1.75rem;
+  }
+  .actu-infos { list-style: none; margin-bottom: 2rem; }
+  .actu-infos li {
+    font-size: 0.85rem; font-weight: 300;
+    color: #3C352F; line-height: 1.6;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(119,103,98,0.144);
+  }
+  .actu-infos li:last-child { border-bottom: none; }
+  .actu-infos li b {
+    color: var(--or); font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+  }
+  .actu-infos li i { font-style: italic; color:#4A423D; }
+  .actu-cta { display: flex; gap: 0.85rem; flex-wrap: wrap; }
+  @media (max-width: 900px) {
+    .actu-grid { grid-template-columns: 1fr; gap: 2.25rem; }
+    .actu-visuel { max-width: 420px; margin: 0 auto; }
+    .actu-cta .btn-primary, .actu-cta .btn-ghost { flex: 1 1 auto; text-align: center; }
+  }
+  /* ═══ FIN SECTION ACTUALITÉ ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     CORRECTIFS ACCESSIBILITÉ — audit du 04/09/2026
+     ═══════════════════════════════════════════════════════════ */
+
+  /* Navigation au clavier : le focus doit être visible */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--or);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Cibles tactiles : 32 px minimum (WCAG 2.2 en demande 24) */
+  .nav-socials .social-link,
+  .footer-social .social-link {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 32px; min-height: 32px;
+  }
+  .lang-switcher .lang-active,
+  .lang-switcher .lang-other {
+    display: inline-block; padding: 0.4rem 0.3rem; line-height: 1;
+  }
+  /* Liens de nav : hauteur de clic portée à 32 px sans changer l'apparence */
+  .nav-links a { padding: 0.5rem 0; }
+  @media (min-width: 1200px) {
+    .lang-switcher { padding: 0.3rem 0.85rem; }
+  }
+  @media (max-width: 1199px) {
+    .lang-switcher { padding: 0.2rem 0.6rem; }
+  }
+  @media (max-width: 400px) {
+    .lang-switcher { padding: 0.15rem 0.4rem; }
+    .lang-switcher .lang-active,
+    .lang-switcher .lang-other { padding: 0.35rem 0.2rem; }
+  }
+  .carousel-btn { min-width: 40px; min-height: 40px; }
+
+  /* Texte réservé aux lecteurs d'écran */
+  .sr-only {
+    position: absolute !important; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+
+  /* Respect du réglage système « réduire les animations » */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    #stars { display: none; display: none; }
+  }
+  /* ═══ FIN CORRECTIFS ACCESSIBILITÉ ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     CARROUSEL DE TÉMOIGNAGES — correction, 04/09/2026
+     Les cartes n'étaient pas contraintes : min-width est un plancher,
+     pas un plafond, et flex-shrink:0 interdisait toute réduction. Une
+     carte mesurait 1695 px au lieu de 486 — le texte débordait, et les
+     flèches, qui se déplacent de la largeur d'une carte, sautaient
+     très au-delà du contenu. Le seuil est aligné sur celui du script
+     (700 px), qui décide s'il montre une ou deux cartes.
+     ═══════════════════════════════════════════════════════════ */
+  .temoignages-track > .temoignage { flex: 0 0 calc(50% - 0.75rem); }
+  @media (max-width: 699px) {
+    .temoignages-track > .temoignage { flex: 0 0 100%; min-width: 100%; }
+  }
+
+
+  /* ═══════════════════════════════════════════════════════════
+     TÉMOIGNAGES SUR PAPIER — 04/09/2026
+     Les cartes de témoignage passent sur un crème sablé : c'est la
+     seule zone claire de la page, elle attire l'œil là où ça compte.
+     Portée volontairement limitée à #temoignages : la classe
+     .temoignage est aussi utilisée par la section « Ressources &
+     lectures », qui doit rester sombre.
+     ═══════════════════════════════════════════════════════════ */
+  #temoignages .temoignage {
+    background: #F7F3EE;
+    border-radius: 5px;
+    padding: 2.3rem 2.3rem 2rem;
+    box-shadow: 0 22px 48px rgba(119,103,98,0.18);
+  }
+  #temoignages .temoignage::before { color: rgba(34,29,22,0.13); }
+  #temoignages .temoignage-text { color: #2E2825; }
+  #temoignages .temoignage-footer { border-top: 1px solid rgba(34,29,22,0.13); }
+  #temoignages .t-name { color: #2E2825; }
+  #temoignages .t-ctx  { color: #6E625C; }
+  #temoignages .t-avatar { border-style: solid; border-width: 1px; }
+  @media (max-width: 768px) {
+    #temoignages .temoignage { padding: 1.7rem 1.5rem 1.5rem; }
+  }
+  /* ═══ FIN TÉMOIGNAGES PAPIER ═══ */
+
+  /* ═══════════════════════════════════════════════════════════
+     OFFRES — CARTES PAPIER SUR FOND NOIR, 04/09/2026
+     Même logique que les témoignages : la section reste dans la nuit,
+     seules les cartes passent sur le papier. Pas de grand aplat beige
+     qui casse la page, mais le confort de lecture du fond clair.
+     Corail, turquoise et eucalyptus remplacent l'or, le vert, le bleu.
+     ═══════════════════════════════════════════════════════════ */
+  #offres { background: #E2E6E0; }
+  #offres .eyebrow { color: #8A542E; }
+  #offres .eyebrow::before { background: #8A542E; }
+  #offres .s-title { color: #2E2825; }
+  #offres .s-title em { color: #8A542E; }
+
+  #offres .offres-grid { border: none; gap: 1.25rem; background: transparent; }
+  #offres .offre-card {
+    background: #F7F3EE;
+    border: 1px solid rgba(20,20,20,0.09);
+    border-right: 1px solid rgba(20,20,20,0.09);
+    border-radius: 7px; overflow: hidden;
+    box-shadow: 0 20px 46px rgba(119,103,98,0.18);
+  }
+  #offres .offre-card:hover { box-shadow: 0 28px 60px rgba(119,103,98,0.18); }
+  #offres .offre-card::before { height: 3px; }
+  #offres .offre-card.c1::before { background: #B0713F; }
+  #offres .offre-card.c2::before { background: #7E9296; }
+  #offres .offre-card.c3::before { background: #8A9679; }
+  #offres .offre-num { color: rgba(20,20,20,0.045); }
+
+  #offres .offre-name { color: #2E2825; }
+  #offres .offre-promise { color: #4A423D; border-bottom: 1px solid rgba(20,20,20,0.1); }
+  #offres .offre-list li { color: #4A423D; border-bottom: 1px solid rgba(20,20,20,0.07); }
+  #offres .offre-footer { border-top: 1px solid rgba(20,20,20,0.1); background: rgba(20,20,20,0.02); }
+  #offres .offre-prix-area div[style] { color: #2E2825 !important; }
+  #offres .offre-prix-area p[style]   { color: #6E625C !important; }
+  #offres .lieu-tag { color: #6E625C; background: rgba(20,20,20,0.045); border: 1px solid rgba(20,20,20,0.1); }
+
+  #offres .c1 .offre-tag, #offres .c1 .offre-name em, #offres .c1 .offre-accroche { color: #8A542E; }
+  #offres .c2 .offre-tag, #offres .c2 .offre-name em, #offres .c2 .offre-accroche { color: #4F6165; }
+  #offres .c3 .offre-tag, #offres .c3 .offre-name em, #offres .c3 .offre-accroche { color: #59654A; }
+  #offres .c1 .offre-tag::before { background: #8A542E; }
+  #offres .c2 .offre-tag::before { background: #4F6165; }
+  #offres .c3 .offre-tag::before { background: #59654A; }
+  #offres .c1 .offre-list li::before { background: #B0713F; }
+  #offres .c2 .offre-list li::before { background: #7E9296; }
+  #offres .c3 .offre-list li::before { background: #8A9679; }
+
+  #offres .offre-cta {
+    border-radius: 999px; background: transparent;
+    border: 1px solid currentColor; font-weight: 500;
+    font-size: 0.68rem; letter-spacing: 0.16em; padding: 0.95rem 1rem;
+  }
+  #offres .c1 .offre-cta { color: #8A542E; }
+  #offres .c2 .offre-cta { color: #4F6165; }
+  #offres .c3 .offre-cta { color: #59654A; }
+  #offres .c1 .offre-cta:hover { background: rgba(138,84,46,0.10); }
+  #offres .c2 .offre-cta:hover { background: rgba(79,97,101,0.10); }
+  #offres .c3 .offre-cta:hover { background: rgba(89,101,74,0.09); }
+  /* ═══ FIN OFFRES CARTES PAPIER ═══ */
+
+
+
+
+  /* ═══ SECTION ÉTHIQUE SUR PAPIER — 04/09/2026 ═══ */
+  #ethique { background: #ECECE8 !important; }
+  #ethique .eyebrow { color: #7E4D2A; }
+  #ethique .eyebrow::before { background: #7E4D2A; }
+  #ethique .s-title { color: #2E2825; }
+  #ethique .s-title em { color: #7E4D2A; }
+  /* ═══ FIN ÉTHIQUE PAPIER ═══ */
+
+
+
+
+
+  /* ═══════════════════════════════════════════════════════════
+     SECTION CONTACT SUR PAPIER — 04/09/2026
+     Le papier vaut aussi pour ce qui s'écrit : un formulaire de sept
+     champs se remplit mieux sur fond clair, et le dernier appel à
+     l'action devient le point le plus lumineux de la page.
+     ═══════════════════════════════════════════════════════════ */
+  #contact { background: #ECECE8 !important; }
+  #contact .eyebrow { color: #7E4D2A; }
+  #contact .eyebrow::before { background: #7E4D2A; }
+  #contact .s-title { color: #2E2825; }
+  #contact .s-title em { color: #7E4D2A; }
+  #contact .s-desc { color: #4A423D; }
+  #contact input, #contact textarea, #contact select { color: #2E2825; }
+  #contact input::placeholder,
+  #contact textarea::placeholder { color: #8A7F79; }
+  #contact label { color: #4A423D; }
+  /* ═══ FIN CONTACT PAPIER ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V4 — BANDEAU DE NAVIGATION DANS LA NUIT
+     Le reste de la page est en « Atmosphère cocooning » ; seule la
+     barre du haut garde le noir et l'or. Les variables de thème sont
+     redéfinies ici : tout ce que contient la nav suit par héritage,
+     y compris les styles en ligne (le bouton Calendly, par exemple).
+     Pour revenir à la V2 intégralement claire : supprimer ce bloc.
+     ═══════════════════════════════════════════════════════════ */
+  nav, .tile-strip {
+    --noir: #160f06;
+    --ardoise: #241a0e;
+    --charbon: #1e1509;
+    --or: #c9a96e;
+    --or-pale: #e8d4aa;
+    --creme: #faf6f0;
+    --sable: #e0d4bc;
+    --muted: #b0a898;
+    --terre: #9a8878;
+    --tile-1: #4a9bb5;
+    --tile-2: #c0784a;
+    --tile-3: #6b9e7a;
+  }
+
+  /* le filet d'azulejos retrouve ses couleurs pleines */
+  .tile-strip {
+    background: repeating-linear-gradient(90deg,
+      #4a9bb5 0px, #4a9bb5 20px, #c9a96e 20px, #c9a96e 40px,
+      #c0784a 40px, #c0784a 60px, #6b9e7a 60px, #6b9e7a 80px) !important;
+    height: 4px !important;
+  }
+
+  /* la barre elle-même */
+  nav {
+    background: rgba(22,14,4,0.98) !important;
+    border-bottom: 1px solid rgba(201,169,110,0.2) !important;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.35) !important;
+  }
+  nav.scrolled { border-bottom-color: rgba(201,169,110,0.28) !important; }
+
+  /* le colibri redevient clair sur fond sombre */
+  .nav-signature { filter: invert(1) brightness(2) !important; opacity: 0.75 !important; }
+  .nav-signature:hover {
+    filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(1.2) !important;
+    opacity: 1 !important;
+  }
+
+  /* liens, langues, réseaux */
+  .nav-name { color: #faf6f0 !important; }
+  .nav-sub  { color: #c9a96e !important; }
+  .nav-links a { color: rgba(250,246,240,0.88) !important; border-bottom-color: transparent !important; }
+  .nav-links a:hover { color: #c9a96e !important; border-bottom-color: rgba(201,169,110,0.4) !important; }
+  .lang-switcher { border-color: rgba(201,169,110,0.45) !important; color: rgba(250,246,240,0.88) !important; }
+  .lang-active { color: #c9a96e !important; border-bottom-color: #c9a96e !important; }
+  .lang-sep   { color: rgba(201,169,110,0.78) !important; }
+  .lang-other { color: rgba(224,212,188,0.75) !important; }
+  .lang-other:hover { color: #c9a96e !important; }
+  .social-link { color: rgba(250,246,240,0.55) !important; }
+  .social-link:hover { color: #c9a96e !important; }
+  /* le pied de page reste clair : on lui rend ses encres */
+  footer .social-link, .footer-social .social-link { color: #776762 !important; }
+  footer .social-link:hover, .footer-social .social-link:hover { color: #7E4D2A !important; }
+
+  /* bouton « prendre rendez-vous » : or sur nuit, comme à l'origine */
+  nav .nav-right > a[href*="calendly"] {
+    background: #c9a96e !important;
+    color: #160f06 !important;
+  }
+
+  /* menu plein écran (mobile) : il redevient nocturne */
+  .nav-hamburger span { background: #faf6f0 !important; }
+  .nav-links.open { background: rgba(22,15,6,0.99) !important; }
+  .nav-links.open li a { color: #faf6f0 !important; }
+  .nav-close { color: #faf6f0 !important; }
+
+  /* le hero commence juste sous la barre : un souffle sombre assure
+     la jonction au lieu d'une cassure nette */
+  .hero { position: relative; }
+  .hero::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 60px;
+    background: linear-gradient(180deg, rgba(22,14,4,0.16) 0%, rgba(22,14,4,0) 100%);
+    pointer-events: none; z-index: 0;
+  }
+  /* ═══ FIN V4 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V5 — PIED DE PAGE DANS LA NUIT
+     Le site n'a pas de balise <footer> : le dernier bloc (#photos)
+     porte les mentions légales et en tient lieu. On le repasse en
+     nuit pour que la page soit tenue aux deux bouts.
+     ═══════════════════════════════════════════════════════════ */
+  #photos {
+    background: #160f06 !important;
+    border-top: none !important;
+    padding-top: 3.25rem !important;
+    padding-bottom: 2.5rem !important;
+    position: relative;
+    /* la section #contact qui précède est en z-index:1 : sans cela elle
+       recouvrirait le dégradé de couture posé au-dessus de #photos */
+    z-index: 2;
+  }
+  /* Pas de dégradé de couture ici : un fondu du beige vers le noir vire au
+     gris et salit la page. La coupe est nette, comme en haut sous la nav,
+     et c'est le filet d'azulejos qui fait la jonction. */
+  /* le filet d'azulejos referme la page comme il l'ouvre */
+  #photos::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: repeating-linear-gradient(90deg,
+      #4a9bb5 0px, #4a9bb5 20px, #c9a96e 20px, #c9a96e 40px,
+      #c0784a 40px, #c0784a 60px, #6b9e7a 60px, #6b9e7a 80px);
+    opacity: 0.9; pointer-events: none;
+  }
+  /* les trois intitulés (SIRET, contact, RGPD) */
+  #photos .mentions-grid > div > p:first-child { color: #c9a96e !important; }
+  /* le corps du texte */
+  #photos .mentions-grid p { color: rgba(250,246,240,0.72) !important; }
+  /* V51 : l'intertitre est desormais marque par sa classe, et non par
+     sa position — une colonne peut en porter deux. */
+  #photos .mentions-grid p.mt { color: #c9a96e !important; }
+  #photos .mentions-grid > div > p:first-child { color: #c9a96e !important; }
+  #photos a { color: #d9be8a !important; }
+  #photos a:hover { color: #faf6f0 !important; }
+  /* ═══ FIN V5 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V6 — « À LA UNE » DANS LA NUIT
+     Les variables de thème sont redéfinies sur #actu : tout ce qui
+     les utilise (surtitre, titre, badge, boutons) suit par héritage.
+     Seules les valeurs écrites en dur sont reprises à la main.
+     Pour revenir en arrière : supprimer ce bloc.
+     ═══════════════════════════════════════════════════════════ */
+  #actu {
+    --noir: #160f06;
+    --creme: #faf6f0;
+    --or: #c9a96e;
+    --or-pale: #e8d4aa;
+    --sable: #e0d4bc;
+    --muted: #b0a898;
+    /* la couleur de fond est declaree separement du degrade : sans cela
+       background-color reste transparent, et tout outil qui calcule le
+       contraste (ou tout navigateur qui ignore le degrade) voit du texte
+       clair sur le beige du body. */
+    background-color: #180f07 !important;
+    background-image: linear-gradient(168deg, #170f07 0%, #1d1409 100%) !important;
+    color: #faf6f0;
+    position: relative;
+    padding-top: 6.5rem !important;
+    padding-bottom: 6.5rem !important;
+  }
+  /* deux filets d'or très fins ferment la bande en haut et en bas :
+     l'affiche est encadrée, elle ne flotte pas dans un trou noir */
+  #actu::before, #actu::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,0.45), transparent);
+    pointer-events: none;
+  }
+  #actu::before { top: 0; }
+  #actu::after  { bottom: 0; }
+
+  /* l'affiche : cadre or discret, ombre portée sombre */
+  #actu .actu-visuel img {
+    border: 1px solid rgba(201,169,110,0.35) !important;
+    box-shadow: 0 26px 64px rgba(0,0,0,0.55) !important;
+  }
+
+  /* le texte */
+  #actu .actu-accroche { color: rgba(250,246,240,0.80) !important; }
+  #actu .actu-infos li {
+    color: rgba(250,246,240,0.82) !important;
+    border-bottom-color: rgba(201,169,110,0.18) !important;
+  }
+  #actu .actu-infos li i { color: #b0a898 !important; }
+
+  /* boutons : l'or plein pour WhatsApp, le contour clair pour la question */
+  #actu .btn-ghost { border-color: rgba(201,169,110,0.45) !important; color: rgba(250,246,240,0.88) !important; }
+  #actu .btn-ghost:hover { border-color: #c9a96e !important; color: #c9a96e !important; }
+  /* ═══ FIN V6 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V7 — « POUR LES ORGANISATIONS » DANS LA NUIT
+     + le fond de la section des offres retravaillé.
+     Les couleurs de la section entreprise sont converties à la source
+     (styles en ligne) ; ici on ne pose que ce qui vient de la feuille
+     de style : les variables de thème et les boutons.
+     ═══════════════════════════════════════════════════════════ */
+  #entreprise {
+    --noir: #160f06;
+    --creme: #faf6f0;
+    --or: #c9a96e;
+    --or-pale: #e8d4aa;
+    --muted: #b0a898;
+    color: #faf6f0;
+    /* le fond est un degrade en style en ligne : sans couleur pleine
+       declaree ici, background-color reste transparent et tout calcul de
+       contraste voit le texte clair sur le beige du body. */
+    background-color: #1C1510 !important;
+  }
+  /* deux filets d'or ferment la bande, comme pour « À la une » */
+  #entreprise::before, #entreprise::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,0.45), transparent);
+    pointer-events: none;
+  }
+  #entreprise::before { top: 0; }
+  #entreprise::after  { bottom: 0; }
+  #entreprise .btn-ghost {
+    border-color: rgba(201,169,110,0.45) !important;
+    color: rgba(250,246,240,0.88) !important;
+  }
+  #entreprise .btn-ghost:hover { border-color: #c9a96e !important; color: #c9a96e !important; }
+
+  /* ── fond de la section des offres ──
+     Le gris Hanoï d'origine tirait sur le vert et refroidissait la seule
+     section où l'on parle d'argent et d'engagement. On garde un ton chaud,
+     un cran plus soutenu que les sections voisines pour que les cartes
+     blanches se détachent franchement. */
+  #offres { background: #E3D8C9 !important; }
+  /* le fond etant un cran plus soutenu, le surtitre passe sous le seuil de
+     lisibilite : on le fonce d'autant. */
+  #offres .eyebrow { color: #74451F !important; }
+  #offres .eyebrow::before { background: #74451F !important; }
+  /* ═══ FIN V7 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V8 — FONDS CHAUDS, #EDDCD0 DISTINCT, APPELS A L'ACTION EN OR
+     ═══════════════════════════════════════════════════════════ */
+
+  /* ── 1. les deux ors ──
+     Un seul hexadécimal ne peut pas être à la fois élégant sur du noir et
+     lisible sur du beige. On garde donc une seule teinte (38°) déclinée en
+     deux clartés, portée par deux variables. Tous les boutons du site
+     appellent ces variables : changer l'or ici les change tous. */
+  :root { --cta: #7E5C24; --cta-ink: #F7F3EE; }
+  nav, #actu, #entreprise, #photos { --cta: #c9a96e; --cta-ink: #160f06; }
+
+  .btn-primary {
+    background: var(--cta) !important; border-color: var(--cta) !important;
+    color: var(--cta-ink) !important;
+  }
+  .btn-primary:hover { background: #8F6A2A !important; border-color: #8F6A2A !important; }
+  nav .btn-primary:hover, #actu .btn-primary:hover,
+  #entreprise .btn-primary:hover { background: #e0c58c !important; border-color: #e0c58c !important; }
+  .btn-ghost { border-color: var(--cta) !important; color: var(--cta) !important; }
+  .btn-ghost:hover { border-color: #8F6A2A !important; color: #8F6A2A !important; }
+  #actu .btn-ghost, #entreprise .btn-ghost {
+    border-color: rgba(201,169,110,0.45) !important; color: rgba(250,246,240,0.88) !important;
+  }
+  #actu .btn-ghost:hover, #entreprise .btn-ghost:hover {
+    border-color: #c9a96e !important; color: #c9a96e !important;
+  }
+  /* les boutons des trois cartes d'offres : l'or remplace le code couleur,
+     que la barre du haut et l'étiquette continuent de porter */
+  #offres .offre-cta { color: var(--cta) !important; border-color: var(--cta) !important; }
+  #offres .offre-cta:hover { background: rgba(126,92,36,0.08) !important; }
+  .carousel-btn { color: var(--cta) !important; border-color: rgba(126,92,36,0.40) !important; }
+  .cdot.active { background: var(--cta) !important; }
+
+  /* ── 2. les fonds : plus un seul ton froid ──
+     Le gris-vert du nuancier (#ECECE8, #E2E6E0) grisaillait quatre sections
+     d'affilée. Deux tons chauds les remplacent : un sable, sur lequel les
+     cartes crème se détachent, et un ivoire pour les sections de lecture. */
+  .hero { background: linear-gradient(165deg, #EDDCD0 0%, #EBE4DC 55%, #E7DFD2 100%) !important; }
+  #temoignages, #ethique, #contact { background: #E7DFD2 !important; }
+  #faq       { background: #F1EAE0 !important; }
+  /* --ardoise porte les « lignes posees » : les rangees de l'agenda et de
+     la FAQ. Elle valait le gris-vert du nuancier ; en creme, ces rangees
+     se lisent comme du papier pose sur le fond, comme les cartes. */
+  :root { --ardoise: #F7F3EE; }
+  #offres    { background: #E3D8C9 !important; }
+
+  /* le gris secondaire passait tout juste sous le seuil sur le sable :
+     un cran plus fonce, il repasse au-dessus partout. */
+  #temoignages .t-ctx { color: #63594F !important; }
+
+  /* ── 3. l'agenda : sa propre bande ──
+     Il était du même gris que les témoignages qui le précèdent : aucune
+     frontière, donc aucune raison pour l'œil de s'y arrêter. Or ce sont
+     les prochaines dates — la section la plus périssable du site et la
+     plus utile. Elle change de ton et se ferme par deux filets. */
+  #ateliers { background: #EDDCD0 !important; position: relative; }
+  #ateliers::before, #ateliers::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(126,92,36,0.35), transparent);
+    pointer-events: none;
+  }
+  #ateliers::before { top: 0; }
+  #ateliers::after  { bottom: 0; }
+  /* ═══ FIN V8 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V9 — « MON ÉTHIQUE » EN NUIT, PANNEAUX PAPIER
+     Même recette que les cartes d'offres sur fond noir : le fond de la
+     section bascule, les panneaux restent du papier. Le texte ne change
+     pas de support.
+     ═══════════════════════════════════════════════════════════ */
+  #ethique {
+    background-color: #170F07 !important;
+    background-image: linear-gradient(168deg, #170F07 0%, #1D1409 100%) !important;
+    position: relative;
+    --creme: #faf6f0;
+    --or: #c9a96e;
+    --or-pale: #e8d4aa;
+    --muted: #b0a898;
+    --cta: #c9a96e;
+    --cta-ink: #160f06;
+  }
+  #ethique .s-title { color: #faf6f0 !important; }
+  #ethique .s-title em { color: #c9a96e !important; }
+  #ethique .eyebrow { color: #c9a96e !important; }
+  #ethique .eyebrow::before { background: #c9a96e !important; }
+  /* les filets entre les panneaux : de l'or, sans quoi c'est du noir sur du noir */
+  #ethique .s-inner > div[style*="grid"] { background: rgba(201,169,110,0.28) !important; }
+  /* le bloc « mon engagement », posé à même le fond et non sur un panneau */
+  #ethique .s-inner > div:last-child p { color: #c9a96e !important; }
+  /* deux filets d'or ferment la bande, comme pour les autres */
+  #ethique::before, #ethique::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,0.45), transparent);
+    pointer-events: none;
+  }
+  #ethique::before { top: 0; }
+  #ethique::after  { bottom: 0; }
+
+  /* la FAQ qui suit passe en ivoire franc, le contact reste sur le sable :
+     entre les deux la frontière se voit enfin. */
+  #faq     { background: #F3EDE4 !important; }
+  #contact { background: #E7DFD2 !important; }
+  /* ═══ FIN V9 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V10 — L'AGENDA EN NUIT, RANGÉES PAPIER
+     ═══════════════════════════════════════════════════════════ */
+  #ateliers {
+    background-color: #170F07 !important;
+    background-image: linear-gradient(168deg, #170F07 0%, #1D1409 100%) !important;
+    --creme: #faf6f0;
+    --or: #c9a96e;
+    --or-pale: #e8d4aa;
+    --muted: #b0a898;
+    --cta: #c9a96e;
+    --cta-ink: #160f06;
+  }
+  #ateliers .s-title { color: #faf6f0 !important; }
+  #ateliers .s-title em { color: #c9a96e !important; }
+  #ateliers .eyebrow { color: #c9a96e !important; }
+  #ateliers .eyebrow::before { background: #c9a96e !important; }
+  /* les filets d'or de la bande, deja poses en V8, restent valables */
+
+  /* le cadre du tableau et les 1 px entre les rangées */
+  #ateliers .s-inner > div[style*="flex-direction:column"] {
+    background: rgba(201,169,110,0.28) !important;
+    border-color: rgba(201,169,110,0.30) !important;
+  }
+  /* les bandeaux de groupe (« Constellations · A Fábrica · … ») */
+  #ateliers div[style*="rgba(119,103,98,0.048)"] { background: rgba(201,169,110,0.10) !important; }
+  /* (regle V10 retiree en V15) */
+
+  /* ── les rangées de dates : elles restent du papier ──
+     Donc tout ce qu'elles contiennent garde son encre sombre, et l'or
+     qu'elles portent redevient l'or profond : de l'or clair sur du papier
+     crème ne se lit pas. */
+  #ateliers div[style*="--ardoise"] {
+    --cta: #7E5C24; --cta-ink: #F7F3EE; --creme: #2E2825;
+  }
+  #ateliers div[style*="--ardoise"] p { color: #4A423D !important; }
+  #ateliers div[style*="--ardoise"] p[style*="Libre Baskerville"] { color: #2E2825 !important; }
+  #ateliers div[style*="--ardoise"] p[style*="#17607A"] { color: #17607A !important; }
+  #ateliers div[style*="--ardoise"] p[style*="#136A21"] { color: #136A21 !important; }
+  #ateliers div[style*="--ardoise"] a { color: var(--cta-ink) !important; }
+  #ateliers div[style*="--ardoise"] a[style*="border:1px"] { color: #7E5C24 !important; }
+
+  /* ── l'éthique rendue au clair ──
+     Deux bandes sombres qui se touchent ne font plus un rythme, elles font
+     un bloc. Si l'agenda passe en nuit, l'éthique qui le suit immédiatement
+     revient sur du sable. */
+  #ethique {
+    background-color: #E7DFD2 !important;
+    background-image: none !important;
+    --creme: #2E2825; --or: #7E4D2A; --muted: #6E625C;
+    --cta: #7E5C24; --cta-ink: #F7F3EE;
+  }
+  #ethique .s-title { color: #2E2825 !important; }
+  #ethique .s-title em { color: #7E4D2A !important; }
+  #ethique .eyebrow { color: #7E4D2A !important; }
+  #ethique .eyebrow::before { background: #7E4D2A !important; }
+  #ethique .s-inner > div[style*="grid"] { background: rgba(20,20,20,0.09) !important; }
+  #ethique .s-inner > div:last-child p { color: #7E4D2A !important; }
+  #ethique::before, #ethique::after { display: none !important; }
+
+  /* ═══ FIN V10 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V11 — LES BOUTONS DES CARTES D'OFFRES
+     Ils étaient en pastille à contour fin : les trois actions les plus
+     importantes du site étaient les plus discrètes de la page. On leur
+     donne le bouton principal utilisé partout ailleurs.
+     ═══════════════════════════════════════════════════════════ */
+  #offres .offre-cta {
+    background: var(--cta) !important;
+    color: var(--cta-ink) !important;
+    border: 1px solid var(--cta) !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.12em !important;
+    padding: 1rem 1rem !important;
+    box-shadow: 0 6px 18px rgba(126,92,36,0.22) !important;
+  }
+  #offres .offre-cta:hover {
+    background: #8F6A2A !important;
+    border-color: #8F6A2A !important;
+    color: #F7F3EE !important;
+    box-shadow: 0 10px 26px rgba(126,92,36,0.30) !important;
+    transform: translateY(-1px);
+  }
+  /* le pied de carte respire un peu plus, pour que le bouton plein
+     ne vienne pas coller au dernier point de la liste */
+  #offres .offre-footer { padding-top: 1.9rem !important; }
+  /* ═══ FIN V11 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V12b — LA FAQ EN TERRE CUITE DOUCE
+     Aucune bande sombre supplementaire : la FAQ se distingue par la
+     chaleur, pas par le poids. Deux filets la ferment.
+     ═══════════════════════════════════════════════════════════ */
+  #faq { background: #E8D3C2 !important; position: relative; }
+  #faq::before, #faq::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(126,92,36,0.30), transparent);
+    pointer-events: none;
+  }
+  #faq::before { top: 0; }
+  #faq::after  { bottom: 0; }
+  /* ═══ FIN V12b ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V13 — SECTION CONTACT
+     ═══════════════════════════════════════════════════════════ */
+  /* le titre est suivi d'une phrase qui le prolonge, pas d'une grille :
+     la marge de 3 rem les séparait au lieu de les lier */
+  #contact .s-title { margin-bottom: 1.1rem !important; }
+  #contact .s-desc { margin-bottom: 2.25rem; line-height: 1.7; }
+  /* ── les bandeaux de groupe de l'agenda ──
+     Ils étaient un voile d'or à 10 % sur la nuit, ce qui donnait un brun
+     terne. Ils reprennent le rose poudré du panneau « Ma posture »
+     (#EDDCD0) : la table de dates devient un en-tête rose sur des lignes
+     crème, et la couleur circule d'une section à l'autre. */
+  #ateliers div[style*="rgba(119,103,98,0.048)"] { background: #EDDCD0 !important; }
+  /* (regle V13 retiree en V15 : voir le code couleur) */
+
+  /* les deux bascules du formulaire : même or que le reste du site */
+  #contact #btn-particulier, #contact #btn-entreprise {
+    border-radius: 8px;
+    border-color: var(--cta) !important;
+  }
+  /* ═══ FIN V13 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V14 — LE BANDEAU DE LANGUES REMONTE
+     Le hero centrait son contenu sur 100vh : l'espace sous la nav et
+     l'espace en bas étaient toujours égaux, et réduire la marge haute
+     n'en rendait que la moitié. On ancre le contenu en haut et on fixe
+     l'écart. Sur les écrans très hauts, la place en trop va désormais
+     en bas, où elle ne se voit pas.
+     ═══════════════════════════════════════════════════════════ */
+  .hero {
+    justify-content: flex-start !important;
+    padding-top: 8.5rem !important;
+    gap: 2.5rem !important;
+  }
+  @media (max-width: 1199px) {
+    .hero { padding-top: 7.5rem !important; }
+  }
+  @media (max-width: 767px) {
+    .hero { padding-top: 6.25rem !important; gap: 2rem !important; }
+  }
+  @media (max-width: 479px) {
+    .hero { padding-top: 5.25rem !important; }
+  }
+  /* ═══ FIN V14 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V15
+     ═══════════════════════════════════════════════════════════ */
+
+  /* ── A. le hero ──
+     .stars est décoratif et de hauteur nulle, mais c'était un enfant du
+     conteneur flex : il consommait un gap entier avant le premier texte.
+     Sorti du flux, l'écart sous la nav devient celui qu'on écrit. */
+  .hero > .stars { position: absolute; inset: 0; pointer-events: none; }
+  .hero { justify-content: flex-start !important; padding-top: 9rem !important; gap: 2.5rem !important; }
+  @media (max-width: 1199px) { .hero { padding-top: 8rem !important; } }
+  @media (max-width: 959px)  { .hero { padding-top: 7.25rem !important; } }
+  /* a 768 px et en dessous, la barre de nav n'est plus fixe : elle occupe
+     sa place dans le flux, donc la marge haute n'a plus a la compenser. */
+  @media (max-width: 768px)  { .hero { padding-top: 3rem !important; gap: 2rem !important; } }
+  @media (max-width: 479px)  { .hero { padding-top: 2.5rem !important; } }
+
+  /* ── C. les niveaux de lecture dans les cartes d'offres ──
+     L'accroche passe au second plan, le nom prend la première place. */
+  #offres .offre-accroche {
+    font-size: 0.8rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 1.15rem !important;
+    opacity: 0.92;
+  }
+  #offres .offre-name {
+    font-size: 1.95rem !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.015em !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  /* ── D. le code couleur des quatre offres ──
+     Une teinte par offre, déclinée en deux clartés : la foncée pour les
+     fonds clairs, la claire pour les fonds de nuit. Les boutons restent
+     dorés — la couleur dit de quoi on parle, l'or dit ce qu'on peut faire. */
+  :root {
+    --o1: #9C3F27; --o2: #17607A; --o3: #136A21; --o4: #63506F;
+    --o1-clair: #D98A72; --o2-clair: #56A6A1; --o3-clair: #9AAA7A; --o4-clair: #B49CC4;
+  }
+
+  /* les trois cartes */
+  #offres .offre-card.c1::before { background: var(--o1) !important; }
+  #offres .offre-card.c2::before { background: var(--o2) !important; }
+  #offres .offre-card.c3::before { background: var(--o3) !important; }
+  #offres .c1 .offre-tag, #offres .c1 .offre-name em, #offres .c1 .offre-accroche { color: var(--o1) !important; }
+  #offres .c2 .offre-tag, #offres .c2 .offre-name em, #offres .c2 .offre-accroche { color: var(--o2) !important; }
+  #offres .c3 .offre-tag, #offres .c3 .offre-name em, #offres .c3 .offre-accroche { color: var(--o3) !important; }
+  #offres .c1 .offre-tag::before, #offres .c1 .offre-list li::before { background: var(--o1) !important; }
+  #offres .c2 .offre-tag::before, #offres .c2 .offre-list li::before { background: var(--o2) !important; }
+  #offres .c3 .offre-tag::before, #offres .c3 .offre-list li::before { background: var(--o3) !important; }
+  /* le chiffre en filigrane reprend la teinte de sa carte */
+  #offres .c1 .offre-num { color: rgba(156,63,39,0.10) !important; }
+  #offres .c2 .offre-num { color: rgba(27,99,96,0.10) !important; }
+  #offres .c3 .offre-num { color: rgba(78,95,54,0.10) !important; }
+
+  /* les pastilles du hero : un filet de couleur a gauche de chacune */
+  .hero-offer-pill { border-left: 3px solid transparent; }
+  .hero-offers > a:nth-child(1) .hop-tag { color: var(--o1) !important; }
+  .hero-offers > a:nth-child(2) .hop-tag { color: var(--o2) !important; }
+  .hero-offers > a:nth-child(3) .hop-tag { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(4) .hop-tag { color: var(--o4) !important; }
+  .hero-offers > a:nth-child(1) .hop-name { color: var(--o1) !important; }
+  .hero-offers > a:nth-child(2) .hop-name { color: var(--o2) !important; }
+  .hero-offers > a:nth-child(3) .hop-name { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(4) .hop-name { color: var(--o4) !important; }
+  .hero-offers > a:nth-child(1) { border-left-color: var(--o1) !important; }
+  .hero-offers > a:nth-child(2) { border-left-color: var(--o2) !important; }
+  .hero-offers > a:nth-child(3) { border-left-color: var(--o3) !important; }
+  .hero-offers > a:nth-child(4) { border-left-color: var(--o4) !important; }
+
+  /* les bandeaux de groupe de l'agenda portent la couleur de leur offre ;
+     celui des dates sur demande, qui n'appartient a aucune offre, garde
+     l'or profond. */
+  #ateliers div[style*="rgba(119,103,98,0.048)"] p { color: #7E5C24 !important; }
+  #ateliers div[style*="rgba(119,103,98,0.048)"] p[style*="#17607A"] { color: #17607A !important; }
+  #ateliers div[style*="rgba(119,103,98,0.048)"] p[style*="#136A21"] { color: #136A21 !important; }
+
+  /* la section entreprise est sur la nuit : c'est la prune claire */
+  #entreprise { --o4-actif: var(--o4-clair); }
+  /* ═══ FIN V15 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V16 — LE CODE COULEUR PASSE AUX TEINTES DE LA CHARTE
+     Corail #F47B68 · Turquoise #39B8B1 · Vert #0A9042 · Violet #7E6499
+     Ces quatre teintes servent de MARQUE telles quelles (barres, filets,
+     puces, filigranes, cases). Pour le TEXTE sur fond clair, c'est la
+     même teinte assombrie : les couleurs de charte plafonnent à 2,2–3,7
+     pour 1 sur du beige, il en faut 4,5.
+     ═══════════════════════════════════════════════════════════ */
+  :root {
+    --o1: #AB2E1A; --o2: #17607A; --o3: #136A21; --o4: #67557A;
+    --o1-marque: #F47B68; --o2-marque: #39B8B1; --o3-marque: #0A9042; --o4-marque: #7E6499;
+    --o1-nuit: #F47B68; --o2-nuit: #39B8B1; --o3-nuit: #0CA84D; --o4-nuit: #A996BB;
+  }
+
+  /* ── les marques : la couleur de charte, pleine ── */
+  #offres .offre-card.c1::before { background: var(--o1-marque) !important; height: 4px !important; }
+  #offres .offre-card.c2::before { background: var(--o2-marque) !important; height: 4px !important; }
+  #offres .offre-card.c3::before { background: var(--o3-marque) !important; height: 4px !important; }
+  #offres .c1 .offre-tag::before, #offres .c1 .offre-list li::before { background: var(--o1-marque) !important; }
+  #offres .c2 .offre-tag::before, #offres .c2 .offre-list li::before { background: var(--o2-marque) !important; }
+  #offres .c3 .offre-tag::before, #offres .c3 .offre-list li::before { background: var(--o3-marque) !important; }
+  #offres .c1 .offre-num { color: rgba(244,123,104,0.13) !important; }
+  #offres .c2 .offre-num { color: rgba(57,184,177,0.13) !important; }
+  #offres .c3 .offre-num { color: rgba(10,144,66,0.11) !important; }
+  .hero-offers > a:nth-child(1) { border-left-color: var(--o1-marque) !important; }
+  .hero-offers > a:nth-child(2) { border-left-color: var(--o2-marque) !important; }
+  .hero-offers > a:nth-child(3) { border-left-color: var(--o3-marque) !important; }
+  .hero-offers > a:nth-child(4) { border-left-color: var(--o4-marque) !important; }
+
+  /* ── le formulaire de contact reprend le code ──
+     Chaque case porte le filet de son offre, et la coche elle-même en
+     prend la couleur. */
+  #offres-particulier label, #offres-entreprise label { border-left-width: 3px !important; }
+  #offres-particulier label:has(input[value="parcours-groupe"])            { border-left-color: var(--o1-marque) !important; }
+  #offres-particulier label:has(input[value="ateliers-constellations-ic"]) { border-left-color: var(--o2-marque) !important; }
+  #offres-particulier label:has(input[value="stages-thematiques"])         { border-left-color: var(--o3-marque) !important; }
+  #offres-particulier label:has(input[value="parcours-groupe"]) input            { accent-color: var(--o1-marque) !important; }
+  #offres-particulier label:has(input[value="ateliers-constellations-ic"]) input { accent-color: var(--o2-marque) !important; }
+  #offres-particulier label:has(input[value="stages-thematiques"]) input         { accent-color: var(--o3-marque) !important; }
+  #offres-entreprise label { border-left-color: var(--o4-marque) !important; }
+  #offres-entreprise label input { accent-color: var(--o4-marque) !important; }
+  /* le numéro d'offre, en tête de chaque case, prend sa couleur */
+  #offres-particulier label:has(input[value="parcours-groupe"]) > span            { color: #AB2E1A !important; }
+  #offres-particulier label:has(input[value="ateliers-constellations-ic"]) > span { color: #17607A !important; }
+  #offres-particulier label:has(input[value="stages-thematiques"]) > span         { color: #136A21 !important; }
+  #offres-particulier label > span > span { color: #63594F !important; }
+
+  /* ── le formulaire s'eclaircit ──
+     Les champs avaient un fond legerement plus SOMBRE que la section :
+     ils se lisaient comme des zones grises, pas comme des cases a
+     remplir. Ils passent au papier, avec un filet un peu plus net. */
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],
+  #contact textarea, #contact select {
+    background: #FBF8F4 !important;
+    border-color: rgba(20,20,20,0.17) !important;
+  }
+  #contact input::placeholder, #contact textarea::placeholder { color: #79736A !important; }
+  #offres-particulier label, #offres-entreprise label { background: #FBF8F4 !important; }
+  /* ═══ FIN V16 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V17
+     ═══════════════════════════════════════════════════════════ */
+
+  /* ── 1. les deux liens de nav qui mènent à une offre ──
+     Version nuit des teintes : le violet foncé de la charte tombe à 2,9
+     pour 1 sur la barre sombre. Ici, 7,1 — et le corail 7,2. */
+  .nav-links a[href="#offres"]     { color: #F47B68 !important; }
+  .nav-links a[href="#entreprise"] { color: #A996BB !important; }
+  .nav-links a[href="#offres"]:hover     { color: #F8A08F !important; border-bottom-color: rgba(244,123,104,0.5) !important; }
+  .nav-links a[href="#entreprise"]:hover { color: #C4B5D2 !important; border-bottom-color: rgba(169,150,187,0.5) !important; }
+  .nav-links.open li a[href="#offres"]     { color: #F47B68 !important; }
+  .nav-links.open li a[href="#entreprise"] { color: #A996BB !important; }
+
+  /* ── 2. les niveaux de lecture du haut de hero ── */
+  .hero-location {
+    font-size: 0.58rem !important; letter-spacing: 0.18em !important;
+    color: #645B55 !important; font-weight: 400 !important;
+    margin-bottom: 1.25rem !important; line-height: 2 !important;
+  }
+  .hero-location a { color: #5F5750 !important; }
+  .hero-location > span { color: #69605A !important; }
+  .hero-sub { color: #7E5C24 !important; font-size: 0.62rem !important; }
+  .hero-tagline { color: #3C352F !important; }
+
+  /* ── 3. « Sur demande » n'est pas un prix ── */
+  #offres .offre-prix-area > div[style] {
+    font-size: 1.15rem !important; margin-bottom: 0.25rem !important;
+  }
+
+  /* ── 4. les filets des témoignages : couleurs de charte, pleines ── */
+  #temoignages .temoignage[style*="#F47B68"] { border-top: 4px solid #F47B68 !important; }
+  #temoignages .temoignage[style*="#39B8B1"] { border-top: 4px solid #39B8B1 !important; }
+  #temoignages .temoignage[style*="#0A9042"] { border-top: 4px solid #0A9042 !important; }
+  #temoignages .temoignage[style*="#7E6499"] { border-top: 4px solid #7E6499 !important; }
+
+  /* ── 5. les bandeaux de l'agenda : un filet latéral à leur couleur ──
+     en ombre interne, pour ne pas décaler la mise en page. */
+  #ateliers div[style*="rgba(119,103,98,0.048)"]:has(p[style*="#17607A"]) { box-shadow: inset 5px 0 0 #39B8B1; }
+  #ateliers div[style*="rgba(119,103,98,0.048)"]:has(p[style*="#136A21"]) { box-shadow: inset 5px 0 0 #0A9042; }
+  #ateliers div[style*="rgba(119,103,98,0.048)"]:not(:has(p[style*="#17607A"])):not(:has(p[style*="#136A21"])) {
+    box-shadow: inset 5px 0 0 #c9a96e;
+  }
+
+  /* ── 6. le bloc entreprise du formulaire : deux champs côte à côte ── */
+  #champEntreprise, #champEmpresa { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 599px) {
+    #champEntreprise, #champEmpresa { grid-template-columns: 1fr; }
+  }
+  /* ═══ FIN V17 ═══ */
+
+
+  /* ═══════════════════════════════════════════════════════════
+     V18
+     ═══════════════════════════════════════════════════════════ */
+
+  /* ── C. le haut du hero ──
+     Les deux lignes utilitaires — langues et pays — avaient la même
+     taille, la même couleur et le même interlettrage : elles formaient un
+     bloc gris au-dessus du nom. La ligne des pays est descendue rejoindre
+     le titre, sous le nom. Il ne reste qu'une ligne en haut. */
+  .hero-location { margin-bottom: 0.9rem !important; }
+  .hero-sub { line-height: 1.9 !important; }
+  /* ═══ FIN V18 ═══ */
+
+
+  /* la boîte à outils : trois colonnes sur grand écran, empilées ensuite */
+  @media (max-width: 899px) {
+    .outils-grille { grid-template-columns: 1fr !important; gap: 2rem !important; }
+    .outils-grille figure { max-width: 320px; margin: 0 auto !important; }
+  }
+
+  /* la case « formation » du volet particulier porte la couleur
+     entreprise : c'est la meme offre, vue depuis l'autre porte. */
+  #offres-particulier label:has(input[value="formation"])       { border-left-color: var(--o4-marque) !important; }
+  #offres-particulier label:has(input[value="formation"]) input { accent-color: var(--o4-marque) !important; }
+  #offres-particulier label:has(input[value="formation"]) > span { color: #67557A !important; }
+
+  /* ── si la signature ne charge pas ──
+     Le texte alternatif s'affiche a sa place. Sans garde-fou il prend
+     la taille du texte courant, passe a la ligne et pousse la barre de
+     navigation hors de l'ecran. On le contraint a la boite du logo. */
+  .nav-brand { max-width: 46vw; overflow: hidden; }
+  .nav-signature {
+    max-width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    line-height: 1.15;
+    /* la barre de nuit inverse l'image par un filtre CSS, et ce filtre
+       s'applique aussi au texte alternatif : on part donc d'un gris
+       moyen, qui ressort creme une fois inverse. */
+    color: #7A7568;
+    overflow: hidden;
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://annabeljbarra.github.io/annabel-barra/#annabel",
+   "name": "Annabel Barra",
+   "alternateName": "Anabela Barra",
+   "jobTitle": "Coach · Facilitação & engenharia de formação",
+   "description": "Coach de transição certificada RNCP, facilitação e engenharia de formação. Constelações familiares e sistémicas, inteligência coletiva e acompanhamento em empresa, em português e em francês, entre o Algarve e a Provença.",
+   "url": "https://annabeljbarra.github.io/annabel-barra/pt.html",
+   "image": "https://annabeljbarra.github.io/annabel-barra/partage-pt.jpg",
+   "email": "mailto:annabeljbarra@gmail.com",
+   "telephone": "+33627414578",
+   "knowsLanguage": [
+    "fr",
+    "pt",
+    "en",
+    "es"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Olhão",
+    "addressRegion": "Algarve",
+    "addressCountry": "PT"
+   },
+   "areaServed": [
+    {
+     "@type": "Place",
+     "name": "Algarve, Portugal"
+    },
+    {
+     "@type": "Place",
+     "name": "Provence-Alpes-Côte d'Azur, France"
+    }
+   ],
+   "sameAs": [
+    "https://www.facebook.com/anabelabarra.transitions.constellations/",
+    "https://www.instagram.com/valueforhumans",
+    "https://www.linkedin.com/in/annabel-barra-ricard/"
+   ]
+  },
+  {
+   "@type": "Event",
+   "name": "Constelações familiares & sistémicas — Olhão",
+   "description": "Dia de constelações familiares e sistémicas, grupo limitado.",
+   "startDate": "2026-11-07T09:00:00+00:00",
+   "endDate": "2026-11-07T18:00:00+00:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "location": {
+    "@type": "Place",
+    "name": "A Fábrica",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Rua Vasco da Gama 60",
+     "addressLocality": "Olhão",
+     "addressRegion": "Algarve",
+     "postalCode": "8700",
+     "addressCountry": "PT"
+    }
+   },
+   "organizer": {
+    "@id": "https://annabeljbarra.github.io/annabel-barra/#annabel"
+   },
+   "performer": {
+    "@id": "https://annabeljbarra.github.io/annabel-barra/#annabel"
+   },
+   "image": "https://annabeljbarra.github.io/annabel-barra/partage.jpg",
+   "url": "https://annabeljbarra.github.io/annabel-barra/pt.html#ateliers",
+   "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "70",
+    "highPrice": "90",
+    "availability": "https://schema.org/InStock",
+    "url": "https://annabeljbarra.github.io/annabel-barra/pt.html#ateliers"
+   }
+  }
+ ]
+}
+  </script>
+</head>
+<body>
+
+<div class="tile-strip"></div>
+<div id="stars"></div>
+
+<div class="page">
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-brand">
+    <a href="#" style="display:flex;align-items:center;text-decoration:none;">
+      <img src="img/signature.webp" alt="Annabel Barra" width="480" height="279" decoding="async" class="nav-signature">
+    </a>
+  </div>
+  <div class="nav-right">
+    <button class="nav-hamburger" onclick="navMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <button class="nav-close" onclick="navMenu(false)" aria-label="Fechar">✕</button>
+      <li><a href="#offres" style="color:var(--or);">Percursos</a></li>
+      <li><a href="#ateliers">Agenda</a></li>
+      <li><a href="#qui">O Meu ADN</a></li>
+      <li><a href="#entreprise" style="color:#67557A;">Empresa &amp; formação</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <script>
+    function navMenu(open){
+      var ul = document.querySelector('.nav-links');
+      var nav = document.getElementById('nav');
+      if (open === undefined) open = !ul.classList.contains('open');
+      ul.classList.toggle('open', open);
+      nav.classList.toggle('menu-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(a){
+      a.addEventListener('click', function(){ navMenu(false); });
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') navMenu(false);
+    });
+    </script>
+    <a href="https://calendly.com/annabeljbarra/15min" target="_blank" style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;background:var(--cta);color:var(--cta-ink);padding:0.45rem 1.1rem;border-radius:8px;text-decoration:none;transition:background 0.2s ease;flex-shrink:0;" onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--or)'">Marcar uma chamada</a>
+    <div class="nav-socials">
+      <a href="https://www.facebook.com/anabelabarra.transitions.constellations/" target="_blank" class="social-link" aria-label="Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/valueforhumans" target="_blank" class="social-link" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/annabel-barra-ricard/" target="_blank" class="social-link" aria-label="LinkedIn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+    <div class="lang-switcher">
+      <span class="lang-active">PT</span>
+      <span class="lang-sep">·</span>
+      <a href="index.html" class="lang-other">FR</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- HAUT : identité centrée -->
+  <div class="hero-top">
+    <p class="hero-location">🇫🇷 &nbsp;Français · 🇵🇹 &nbsp;Português · <a href="#contact" style="color:inherit;text-decoration:none;border-bottom:1px solid currentColor;">🇬🇧 &nbsp;English · 🇪🇸 &nbsp;Español — sob consulta</a></p>
+    <h1 class="hero-name">
+      <a href="#qui" style="text-decoration:none;color:inherit;">Annabel<br><em>Barra</em></a><span class="sr-only"> — coach certificada RNCP, facilitação &amp; engenharia de formação, constelações familiares &amp; sistémicas, Algarve &amp; PACA</span>
+    </h1>
+    <p class="hero-sub">Nomad coach · Facilitação &amp; engenharia de formação</p>
+    <p class="hero-tagline">Sozinhos sobrevivemos.<br>Juntos transformamo-nos.</p>
+  </div>
+
+  <!-- MILIEU : 3 propositions -->
+  <div class="hero-middle">
+    <div class="hero-offers">
+      <a href="#offres" style="text-decoration:none;" class="hero-offer-pill active">
+        <div class="hop-left">
+          <span class="hop-tag" style="color:#AB2E1A;">★ Oferta principal · 4 meses</span>
+          <span class="hop-name">Percurso de transição</span>
+        </div>
+      </a>
+      <a href="#offres" style="text-decoration:none;" class="hero-offer-pill">
+        <div class="hop-left">
+          <span class="hop-tag" style="color:#17607A;">Sistémico · Familiar · Simbólico</span>
+          <span class="hop-name" style="color:#17607A;">Constelações familiares &amp; sistémicas</span>
+        </div>
+      </a>
+      <a href="#offres" style="text-decoration:none;" class="hero-offer-pill">
+        <div class="hop-left">
+          <span class="hop-tag" style="color:#136A21;">Presencial &amp; online</span>
+          <span class="hop-name" style="color:#136A21;">Workshops de Inteligência Coletiva (IC)</span>
+        </div>
+      </a>
+      <a href="#entreprise" style="text-decoration:none;" class="hero-offer-pill">
+        <div class="hop-left">
+          <span class="hop-tag" style="color:#67557A;">Empresas · Equipas · Gestores</span>
+          <span class="hop-name" style="color:#67557A;">Acompanhamento em empresa &amp; formações</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- BAS : description + CTA centrés -->
+  <div class="hero-bottom">
+    <p class="hero-desc">O que faço: acompanhar pessoas, grupos e equipas no que se move, no que bloqueia, no que procura ser dito.</p>
+    <div class="hero-cta-group">
+      <a href="https://calendly.com/annabeljbarra/15min" target="_blank" class="btn-primary">Marcar uma chamada</a>
+      <a href="#offres" class="btn-ghost">Descobrir as ofertas</a>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- ACTUALITÉ / À LA UNE — bloc à mettre à jour à chaque nouvelle date -->
+<section class="s" id="actu" style="background:#ECECE8;">
+  <div class="s-inner">
+    <p class="eyebrow">&nbsp;Em destaque</p>
+    <h2 class="s-title">A próxima <em>constelação</em>.</h2>
+    <div class="actu-grid">
+      <figure class="actu-visuel">
+        <img src="img/affiche.webp" alt="Cartaz — Constelações familiares &amp; sistémicas, sábado 7 de novembro de 2026, A Fábrica, Olhão" loading="lazy" width="880" height="1240">
+      </figure>
+      <div class="actu-corps">
+        <span class="actu-badge">Próxima data</span>
+        <h3 class="actu-titre">Constelações familiares <em>&amp; sistémicas</em></h3>
+        <p class="actu-accroche">«&nbsp;Há algo que se repete na sua vida?&nbsp;»</p>
+        <ul class="actu-infos">
+          <li><b>Sábado 7 de novembro</b> · manhã 9h – 13h · <i>em francês</i></li>
+          <li><b>Sábado 7 de novembro</b> · tarde 14h – 18h · <i>em português</i></li>
+          <li><b>Local</b> · A Fábrica — R. Vasco da Gama 60, Olhão</li>
+          <li><b>Preço</b> · 70 € representante · 90 € constelado</li>
+          <li><b>Grupo limitado</b></li>
+        </ul>
+        <div class="actu-cta">
+          <a class="btn-primary" href="https://wa.me/33627414578" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+          <a class="btn-ghost" href="#contact">Fazer uma pergunta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- BIO ACCROCHE - OPTION C -->
+<section id="qui" style="background:#EDDCD0;padding:0;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;min-height:520px;">
+
+    <!-- Photo gauche -->
+    <div style="overflow:hidden;position:relative;">
+      <img src="img/portrait.webp" alt="Annabel Barra" width="800" height="992" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,transparent 70%,#EDDCD0 100%);"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 70%,rgba(237,220,208,0.45) 87%,#EDDCD0 100%);"></div>
+    </div>
+
+    <!-- Texte droite -->
+    <div style="padding:4rem 3.5rem;display:flex;flex-direction:column;justify-content:center;gap:1.25rem;">
+      <p style="font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#7E4D2A;font-weight:500;">Coach · Facilitação &amp; engenharia de formação</p>
+      <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;color:#2E2825;line-height:1.85;">Antiga dirigente de empresa, franco-portuguesa. Acompanho pessoas e equipas nas suas transições há mais de 20 anos — com rigor, benevolência e as ferramentas certas.</p>
+      <p style="font-size:0.88rem;font-weight:300;color:#4A423D;line-height:1.7;">Algarve &amp; PACA</p>
+      <div style="margin-top:0.5rem;">
+        <a href="#ethique" style="display:inline-flex;align-items:center;gap:0.5rem;border:1px solid var(--cta);color:var(--cta);padding:0.75rem 1.5rem;font-family:Outfit,sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;">O meu percurso →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </div>
+
+
+
+<div class="gold-line"></div>
+
+<!-- OFFRES -->
+<section class="s" id="offres">
+  <div class="s-inner">
+    <p class="eyebrow">As minhas ofertas de acompanhamento</p>
+    <h2 class="s-title">Percursos construídos<br><em>a partir da sua realidade.</em></h2>
+
+    <div class="offres-grid">
+
+      <div class="offre-card c1">
+        <div class="offre-num">01</div>
+        <div class="offre-body">
+          <div class="offre-tag">★ Oferta principal · 4 meses</div>
+          <p class="offre-accroche">Sozinhos sobrevivemos. Juntos transformamo-nos.</p>
+          <h3 class="offre-name">Percurso<br><em>de transição</em></h3>
+          <p class="offre-promise">Um percurso em grupo de dimensão reduzida — para atravessar uma transição com método e apoio.</p>
+          <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:0.8rem;color:#AB2E1A;line-height:1.7;margin-bottom:1.25rem;">↳ Reconversão · Burnout · Missão de vida · Novo cargo · Rutura</p>
+          <ul class="offre-list">
+              <li>6 a 12 pessoas no máximo — intimidade e segurança garantidas</li>
+              <li>Sessões coletivas + tempo individual integrado</li>
+              <li>Parte com uma direção clara e os recursos para a manter</li>
+          </ul>
+        </div>
+        <div class="offre-footer">
+          <div class="offre-prix-area">
+            <div style="font-family:'Libre Baskerville',serif;font-size:1.6rem;font-weight:400;color:var(--creme);line-height:1.1;margin-bottom:0.35rem;">Sob consulta</div>
+            <p style="font-size:0.78rem;font-weight:300;color:#4A423D;">— falemos · chamada de 20 min Zoom ou WhatsApp</p>
+          </div>
+          <div class="offre-lieux"><span class="lieu-tag">📍 Algarve &amp; PACA</span><span class="lieu-tag">🌐 Online</span><span class="lieu-tag">📍 Presencial</span><span class="lieu-tag">🌐 Híbrido possível</span></div>
+          <a href="#contact" class="offre-cta">Marcar uma chamada</a>
+        </div>
+      </div>
+
+      <div class="offre-card c2">
+        <div class="offre-num">02</div>
+        <div class="offre-body">
+          <div class="offre-tag">Sistémico · Familiar · Simbólico</div>
+          <p class="offre-accroche">O que se repete tem quase sempre uma origem.</p>
+          <h3 class="offre-name">Constelações<br><em>familiares &amp; sistémicas</em></h3>
+          <p class="offre-promise">Um espaço de trabalho encarnado, em grupo, para iluminar o que opera por baixo.</p>
+          <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:0.8rem;color:#17607A;line-height:1.7;margin-bottom:1.25rem;">↳ Dificuldades financeiras · Padrões relacionais · Conflitos familiares · Bloqueios inexplicáveis</p>
+          <ul class="offre-list">
+              <li>Dia ou meio dia no Algarve — 15 pessoas no máximo</li>
+              <li>Confidencialidade total</li>
+              <li>Praticante certificada ASIP</li>
+          </ul>
+        </div>
+        <div class="offre-footer">
+          <div class="offre-prix-area">
+            <div style="font-family:'Libre Baskerville',serif;font-size:1.6rem;font-weight:400;color:var(--creme);line-height:1.1;margin-bottom:0.35rem;">Sob consulta</div>
+            <p style="font-size:0.78rem;font-weight:300;color:#4A423D;">— falemos · chamada de 20 min Zoom ou WhatsApp</p>
+          </div>
+          <div class="offre-lieux"><span class="lieu-tag">📍 Algarve</span><span class="lieu-tag">📍 PACA</span><span class="lieu-tag">📍 Presencial</span><span class="lieu-tag">🌐 Híbrido possível</span></div>
+          <a href="#contact" class="offre-cta">Reservar o meu lugar</a>
+        </div>
+      </div>
+
+      <div class="offre-card c3">
+        <div class="offre-num">03</div>
+        <div class="offre-body">
+          <div class="offre-tag">Presencial &amp; online</div>
+          <p class="offre-accroche">A inteligência está no grupo.</p>
+          <h3 class="offre-name">Workshops <em>IC</em></h3>
+          <p class="offre-promise">Workshops participativos para fazer emergir a inteligência coletiva e avançar juntos.</p>
+          <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:0.8rem;color:#136A21;line-height:1.7;margin-bottom:1.25rem;">↳ Tomada de decisão · Coesão · Bloqueios coletivos · Visão partilhada</p>
+          <ul class="offre-list">
+              <li>Formato de meio dia a 2 dias — co-desenvolvimento, facilitação</li>
+              <li>No Algarve, em PACA, ou em deslocação sob consulta</li>
+              <li>Grupos constituídos e organizações</li>
+          </ul>
+        </div>
+        <div class="offre-footer">
+          <div class="offre-prix-area">
+            <div style="font-family:'Libre Baskerville',serif;font-size:1.6rem;font-weight:400;color:var(--creme);line-height:1.1;margin-bottom:0.35rem;">Sob consulta</div>
+            <p style="font-size:0.78rem;font-weight:300;color:#4A423D;">— falemos · chamada de 20 min Zoom ou WhatsApp</p>
+          </div>
+          <div class="offre-lieux"><span class="lieu-tag">📍 Algarve &amp; PACA</span><span class="lieu-tag">🌐 Online</span><span class="lieu-tag">📍 Presencial</span><span class="lieu-tag">🌐 Híbrido possível</span></div>
+          <a href="#contact" class="offre-cta">Marcar uma chamada</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- fermeture de la section #offres : elle manquait, toute la suite
+     de la page se retrouvait imbriquee a l'interieur -->
+
+    <!-- OFFRE ENTREPRISE -->
+<div class="gold-line"></div>
+
+<section id="entreprise" style="background:linear-gradient(160deg,#1C1510 0%,#1D1409 100%);padding:5rem 3rem;position:relative;overflow:hidden;">
+
+  <!-- Séparateur visuel haut -->
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(180,156,196,0.35),transparent);"></div>
+
+  <!-- Intro pleine largeur -->
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <p style="font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:#A996BB ;font-weight:500;margin-bottom:1rem;">Para as organizações</p>
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:400;color:var(--creme);line-height:1.2;margin-bottom:1.25rem;">Dirige uma equipa<br><em style="color:#A996BB;">ou uma organização?</em></h2>
+      <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:1rem;color:rgba(250,246,240,0.78);max-width:620px;margin:0 auto;line-height:1.8;">O que bloqueia numa empresa raramente é o que se pensa.<br>Acompanho equipas e dirigentes a ir ver onde a questão realmente se joga.</p>
+    </div>
+
+    <!-- 3 colonnes -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(180,156,196,0.20);border:1px solid rgba(180,156,196,0.24);">
+
+      <!-- CE QUE J'ACCOMPAGNE -->
+      <div style="background:#1C1510;padding:2.5rem 2rem;">
+        <p style="font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:#A996BB;font-weight:600;margin-bottom:1.5rem;">O que acompanho</p>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:flex;gap:0.75rem;"><span style="color:#A996BB;flex-shrink:0;">→</span><span style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.6;"><strong style="font-weight:500;color:var(--creme);">Coesão de equipa</strong> — co-desenvolvimento, workshops participativos, inteligência coletiva</span></div>
+          <div style="display:flex;gap:0.75rem;"><span style="color:#A996BB;flex-shrink:0;">→</span><span style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.6;"><strong style="font-weight:500;color:var(--creme);">Comunicação</strong> — falar em público, assertividade, CNV</span></div>
+          <div style="display:flex;gap:0.75rem;"><span style="color:#A996BB;flex-shrink:0;">→</span><span style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.6;"><strong style="font-weight:500;color:var(--creme);">Identidade & cultura</strong> — valores, missão, visão partilhada</span></div>
+          <div style="display:flex;gap:0.75rem;"><span style="color:#A996BB;flex-shrink:0;">→</span><span style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.6;"><strong style="font-weight:500;color:var(--creme);">Prevenção de RPS</strong> — qualidade de vida no trabalho, deteção de tensões</span></div>
+        </div>
+      </div>
+
+      <!-- FORMATS -->
+      <div style="background:#1C1510;padding:2.5rem 2rem;">
+        <p style="font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:#A996BB;font-weight:600;margin-bottom:1.5rem;">Formatos</p>
+        <div style="display:flex;flex-direction:column;gap:1.25rem;">
+          <div>
+            <span style="display:inline-block;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;background:rgba(180,156,196,0.16);color:#A996BB;padding:0.2rem 0.65rem;border-radius:4px;margin-bottom:0.4rem;">Coaching</span>
+            <p style="font-size:0.83rem;font-weight:300;color:rgba(250,246,240,0.78);line-height:1.5;">Acompanhamento individual de gestor — durante vários meses</p>
+          </div>
+          <div>
+            <span style="display:inline-block;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;background:rgba(180,156,196,0.16);color:#A996BB;padding:0.2rem 0.65rem;border-radius:4px;margin-bottom:0.4rem;">Workshops coletivos</span>
+            <p style="font-size:0.83rem;font-weight:300;color:rgba(250,246,240,0.78);line-height:1.5;">Inteligência Coletiva (IC), CNV, co-desenvolvimento</p>
+          </div>
+          <div>
+            <span style="display:inline-block;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;background:rgba(180,156,196,0.16);color:#A996BB;padding:0.2rem 0.65rem;border-radius:4px;margin-bottom:0.4rem;">Acompanhamento estratégico</span>
+            <p style="font-size:0.83rem;font-weight:300;color:rgba(250,246,240,0.78);line-height:1.5;">Missão, visão, cultura empresarial — à medida</p>
+          </div>
+          <div style="background:rgba(180,156,196,0.10);border-left:2px solid #A996BB;padding:0.85rem 1rem;margin-left:-1rem;">
+            <span style="display:inline-block;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;background:rgba(180,156,196,0.24);color:#C4B2D4;padding:0.2rem 0.65rem;border-radius:4px;margin-bottom:0.4rem;">Formações</span>
+            <p style="font-size:0.83rem;font-weight:300;color:rgba(250,246,240,0.82);line-height:1.5;">Prevenção dos RPS, soft skills, comunicação — engenharia à medida: programa, progressão, materiais, avaliação</p>
+          </div>
+        </div>
+        <p style="margin-top:1.5rem;padding-top:1.1rem;border-top:1px solid rgba(180,156,196,0.22);font-size:0.72rem;font-weight:300;color:rgba(250,246,240,0.70);line-height:1.55;">Declaração de atividade de formação (NDA) em curso de registo junto da DREETS PACA (França).</p>
+      </div>
+
+      <!-- CE QUE ÇA CHANGE -->
+      <div style="background:#1C1510;padding:2.5rem 2rem;">
+        <p style="font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:#A996BB;font-weight:600;margin-bottom:1.5rem;">O que muda para si</p>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+          <p style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.7;">As suas equipas comunicam de verdade — menos não-ditos, mais cooperação concreta.</p>
+          <p style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.7;">Os seus gestores mantêm a postura nos momentos difíceis.</p>
+          <p style="font-size:0.85rem;font-weight:300;color:rgba(250,246,240,0.86);line-height:1.7;">A sua organização avança com uma visão partilhada e uma direção comum.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+          <span style="font-size:0.65rem;padding:0.3rem 0.75rem;border:1px solid rgba(180,156,196,0.45);color:#A996BB;border-radius:20px;">📍 Algarve &amp; PACA</span>
+          <span style="font-size:0.65rem;padding:0.3rem 0.75rem;border:1px solid rgba(180,156,196,0.45);color:#A996BB;border-radius:20px;">🌐 Híbrido possível</span>
+        </div>
+        <a href="#contact" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:1rem 1.5rem;background:#c9a96e;border:1px solid #c9a96e;color:#160f06;font-family:Outfit,sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:8px;">Vamos falar do seu projeto →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- TÉMOIGNAGES -->
+<section class="s" id="temoignages">
+  <div class="s-inner">
+    <p class="eyebrow">Eles deram o passo</p>
+    <h2 class="s-title">Eles deram o passo —<br><em>eles testemunham.</em></h2>
+    <p style="text-align:center;font-size:0.8rem;color:#4A423D;margin-bottom:2.5rem;letter-spacing:0.06em;">Avaliações de antigos formandos · 4,8 / 5 na Anotea, plataforma pública oficial</p>
+
+    <div class="temoignages-wrap">
+      <div class="temoignages-track" id="track">
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #F47B68;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#AB2E1A;font-weight:500;margin-bottom:1rem;">Percurso de Transição · Grupo</div>
+          <p class="temoignage-text">A Annabel é uma formadora notável, dotada de uma profunda inteligência emocional (IE). Ao posicionar-se como guia em vez de «formadora», soube fazer emergir uma poderosa energia de grupo e permitir-nos realizar um profundo trabalho de exploração.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(126,77,42,0.13);border-color:rgba(126,77,42,0.50);color:#7E4D2A;">JB</div>
+            <div><div class="t-name">Jean-Baptiste Billaud, PhD</div><div class="t-ctx">Ingeneria Project · Fabrik à Soft Skills · Avignon</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #39B8B1;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#17607A;font-weight:500;margin-bottom:1rem;">Workshops · Constelações & IC</div>
+          <p class="temoignage-text">Era o momento certo para experimentar o coaching, sem saber bem o que era. A escuta, a empatia e os valores que a Annabel transmite dissiparam todas as minhas dúvidas. A sua capacidade de ouvir aquilo que não nos atrevemos a dizer por palavras é indispensável.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(79,97,101,0.13);border-color:rgba(79,97,101,0.50);color:#17607A;">EG</div>
+            <div><div class="t-name">Elsa Gailhac</div><div class="t-ctx">Coaching individual · Vaucluse</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #7E6499;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#67557A;font-weight:500;margin-bottom:1rem;">Acompanhamento em empresa</div>
+          <p class="temoignage-text">É uma verdadeira tecedora de laços. As nossas conversas permitiram-me reencontrar-me comigo mesma, numa versão mais próxima dos meus valores.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(138,84,46,0.13);border-color:rgba(138,84,46,0.50);color:#AB2E1A;">EG</div>
+            <div><div class="t-name">Estelle Genovardo</div><div class="t-ctx">Diretora-geral · Kizeo & Stellar Quantum</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #0A9042;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#136A21;font-weight:500;margin-bottom:1rem;">Workshops · Inteligência Coletiva (IC)</div>
+          <p class="temoignage-text">Tive a sorte de partilhar um ano intenso em emoções num grupo conduzido pela Annabel. Conseguiu acompanhar-me e mudar a minha forma de ver as coisas. Ainda hoje isso me permite pensar e agir a partir de uma base muito mais positiva.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(0,112,45,0.12);border-color:rgba(0,112,45,0.42);color:#136A21;">BB</div>
+            <div><div class="t-name">Brice Bragato</div><div class="t-ctx">Managing & Business Leader · Tech & B2B Services</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #7E6499;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#67557A;font-weight:500;margin-bottom:1rem;">Acompanhamento em empresa</div>
+          <p class="temoignage-text">Gosto muito de trabalhar com a Annabel. Trouxe-me muito no plano profissional e, por consequência, no plano pessoal. Recomendo-a em todas as vertentes da sua oferta.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(138,84,46,0.13);border-color:rgba(138,84,46,0.50);color:#AB2E1A;">CB</div>
+            <div><div class="t-name">Chloé Bories</div><div class="t-ctx">Empresas · Emprego · Territórios · CJD PACA</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #39B8B1;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#17607A;font-weight:500;margin-bottom:1rem;">Constelações familiares &amp; sistémicas</div>
+          <p class="temoignage-text">Obrigada por este dia que ficará para sempre na minha memória. Foi fantástico, passaram muitas emoções. Sentirmo-nos num lugar tão seguro, graças à facilitadora… O respeito de cada um por todos, sabendo que o que é dito e feito fica entre nós: dá vontade de repetir em outubro. Até breve!</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(79,97,101,0.13);border-color:rgba(79,97,101,0.50);color:#17607A;">AM</div>
+            <div><div class="t-name">Aline Mendonça</div><div class="t-ctx">Constelações familiares · Olhão, Algarve</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #F47B68;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#AB2E1A;font-weight:500;margin-bottom:1rem;">Percurso de Transição · Grupo</div>
+          <p class="temoignage-text">Uma formadora extraordinária, atenciosa, sempre disponível, à escuta de cada um num grupo de 14 pessoas. O meu projeto profissional concretizou-se. Fez-me mudar de óculos e ensinou-me a ousar empreender.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(126,77,42,0.13);border-color:rgba(126,77,42,0.50);color:#7E4D2A;">CP</div>
+            <div><div class="t-name">Claire P.</div><div class="t-ctx">Percurso de grupo · Reconversão profissional</div></div>
+          </div>
+        </div>
+        <div class="temoignage" style="border:1px solid rgba(34,29,22,0.10);border-top:4px solid #F47B68;">
+          <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:#AB2E1A;font-weight:500;margin-bottom:1rem;">Percurso de Transição · Grupo</div>
+          <p class="temoignage-text">Uma experiência humana que nos permite abrir ainda mais aos outros e a nós próprios — ou como conseguir nomear as qualidades e competências que temos, com palavras escolhidas e justas.</p>
+          <div class="temoignage-footer">
+            <div class="t-avatar" style="background:rgba(126,77,42,0.13);border-color:rgba(126,77,42,0.50);color:#7E4D2A;">MF</div>
+            <div><div class="t-name">Marie F.</div><div class="t-ctx">Percurso de grupo · Transições de vida</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-nav">
+      <button class="carousel-btn" id="prev" aria-label="Testemunho anterior">←</button>
+      <div class="carousel-dots" id="dots"></div>
+      <button class="carousel-btn" id="next" aria-label="Testemunho seguinte">→</button>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--cta);color:var(--cta-ink);padding:0.9rem 2rem;font-family:Outfit,sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:8px;">Juntar-me a quem já deu o passo →</a>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const track = document.getElementById('track');
+      const dotsEl = document.getElementById('dots');
+      const cards = Array.from(track.children);
+      let cur = 0;
+      const vis = () => window.innerWidth < 700 ? 1 : 2;
+      const total = () => Math.ceil(cards.length / vis());
+
+      function buildDots(){
+        dotsEl.innerHTML = '';
+        for(let i=0;i<total();i++){
+          const d = document.createElement('span');
+          d.className = 'cdot' + (i===cur?' active':'');
+          d.onclick = () => goTo(i);
+          dotsEl.appendChild(d);
+        }
+      }
+      function goTo(n){
+        cur = Math.max(0, Math.min(n, total()-1));
+        const w = cards[0].offsetWidth + 24;
+        track.style.transform = `translateX(-${cur * vis() * w}px)`;
+        buildDots();
+      }
+      document.getElementById('prev').onclick = () => goTo(cur-1);
+      document.getElementById('next').onclick = () => goTo(cur+1);
+      buildDots();
+      window.addEventListener('resize', () => { cur=0; goTo(0); });
+    })();
+  </script>
+</section>
+<div class="gold-line"></div>
+
+
+
+
+<!-- PROCHAINES DATES -->
+<section class="s" id="ateliers">
+  <div class="s-inner">
+    <p class="eyebrow">Lugares limitados</p>
+    <h2 class="s-title">Agenda —<br><em>próximas datas.</em></h2>
+
+    <div style="display:flex;flex-direction:column;gap:1px;background:rgba(219,189,168,0.22);border:1px solid rgba(126,77,42,0.24);">
+
+      <!-- CONSTELLATIONS -->
+      <div style="background:rgba(119,103,98,0.048);padding:0.75rem 2.5rem;">
+        <p style="font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#17607A;font-weight:500;">Constelações familiares &amp; sistémicas · A Fábrica · Sábado · manhã 9h–13h em francês · tarde 14h–18h em português</p>
+      </div>
+
+
+      <div style="background:var(--ardoise);padding:1.5rem 2.5rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <div>
+          <p style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#17607A;font-weight:500;margin-bottom:0.2rem;">Sábado</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:400;color:var(--creme);">7 de novembro de 2026</p>
+          <p style="font-size:0.72rem;font-weight:300;color:#4A423D;margin-top:0.2rem;">Manhã em francês · Tarde em português · Lugares limitados</p>
+        </div>
+        <a href="#contact" style="white-space:nowrap;background:var(--cta);color:var(--cta-ink);padding:0.65rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;flex-shrink:0;">Inscrever-me →</a>
+      </div>
+
+      <div style="background:var(--ardoise);padding:1.5rem 2.5rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <div>
+          <p style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#17607A;font-weight:500;margin-bottom:0.2rem;">Dezembro 2026 · A confirmar</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:400;color:#544B45;">Data a confirmar</p>
+          <p style="font-size:0.72rem;font-weight:300;color:#4A423D;margin-top:0.2rem;">Algarve</p>
+        </div>
+        <a href="#contact" style="white-space:nowrap;border:1px solid var(--cta);color:var(--cta);padding:0.65rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;flex-shrink:0;">Avisar-me →</a>
+      </div>
+
+      <!-- IC -->
+      <div style="background:rgba(119,103,98,0.048);padding:0.75rem 2.5rem;border-top:2px solid rgba(126,77,42,0.13);margin-top:2px;">
+        <p style="font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#136A21;font-weight:500;">Workshops Inteligência Coletiva (IC) · A Fábrica · Olhão</p>
+      </div>
+
+
+      <div style="background:var(--ardoise);padding:1.5rem 2.5rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <div>
+          <p style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#136A21;font-weight:500;margin-bottom:0.2rem;">Dezembro 2026 · A confirmar</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:400;color:#544B45;">Data a confirmar</p>
+          <p style="font-size:0.72rem;font-weight:300;color:#4A423D;margin-top:0.2rem;">Algarve</p>
+        </div>
+        <a href="#contact" style="white-space:nowrap;border:1px solid var(--cta);color:var(--cta);padding:0.65rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;flex-shrink:0;">Avisar-me →</a>
+      </div>
+
+      <!-- FRANCE -->
+      <div style="background:rgba(119,103,98,0.048);padding:0.75rem 2.5rem;border-top:2px solid rgba(126,77,42,0.13);margin-top:2px;">
+        <p style="font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--or);font-weight:500;">França · Algarve & PACA</p>
+      </div>
+      <div style="background:var(--ardoise);padding:1.5rem 2.5rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <div>
+          <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:400;color:var(--creme);">Datas sob consulta</p>
+          <p style="font-size:0.72rem;font-weight:300;color:#4A423D;margin-top:0.2rem;">Desloco-me para facilitar os seus grupos existentes</p>
+        </div>
+        <a href="#contact" style="white-space:nowrap;border:1px solid var(--cta);color:var(--cta);padding:0.65rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;flex-shrink:0;">Falemos →</a>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="#contact" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--cta);color:var(--cta-ink);padding:0.9rem 2rem;font-family:Outfit,sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:8px;">Reservar um lugar →</a>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="gold-line"></div>
+
+
+
+<div class="gold-line"></div>
+
+<div class="gold-line"></div>
+
+
+<!-- CADRE supprimé — citation intégrée dans signature -->
+
+
+
+<!-- MON ÉTHIQUE -->
+<section class="s" id="ethique" style="background:#ECECE8;">
+  <div class="s-inner">
+    <p class="eyebrow">A minha ética</p>
+    <h2 class="s-title" style="max-width:700px;">O que o acompanhamento<br><em>é e não é.</em></h2>
+
+    <!-- 3 PANNEAUX -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(20,20,20,0.09);margin-bottom:3rem;">
+
+      <!-- 1 -->
+      <div style="background:#F7F3EE;padding:2.5rem 2rem;">
+        <p style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7E4D2A;font-weight:600;margin-bottom:1.5rem;">O enquadramento &amp; o consentimento</p>
+        <p style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:400;color:#2E2825;line-height:1.6;margin-bottom:1.25rem;">Pode dizer não, parar, ou simplesmente observar.</p>
+        <p style="font-size:0.83rem;font-weight:300;color:#4A423D;line-height:1.8;">Confidencialidade total, sem julgamento, respeito pelo ritmo. Tudo o que é partilhado no espaço fica no espaço — sem exceção. Damos e recebemos, cada um ao seu ritmo.</p>
+      </div>
+
+      <!-- 2 -->
+      <div style="background:#EDDCD0;padding:2.5rem 2rem;border-left:1px solid rgba(119,103,98,0.144);border-right:1px solid rgba(119,103,98,0.144);">
+        <p style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7E4D2A;font-weight:600;margin-bottom:1.5rem;">A minha postura</p>
+        <p style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:400;color:#2E2825;line-height:1.6;margin-bottom:1.25rem;">Não estou aqui para lhe dizer o que fazer nem para onde ir.</p>
+        <p style="font-size:0.83rem;font-weight:300;color:#4A423D;line-height:1.8;">Seguro o enquadramento, respeito o seu ritmo, e acompanho o seu próprio movimento — para que o que encontrar possa realmente vivê-lo e encarná-lo. O objetivo é que deixe de precisar de mim.</p>
+      </div>
+
+      <!-- 3 -->
+      <div style="background:#F7F3EE;padding:2.5rem 2rem;">
+        <p style="font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7E4D2A;font-weight:600;margin-bottom:1.5rem;">O que não é</p>
+        <p style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:400;color:#2E2825;line-height:1.6;margin-bottom:1.25rem;">Sem receitas, sem método único.</p>
+        <p style="font-size:0.83rem;font-weight:300;color:#4A423D;line-height:1.8;">Não faço diagnósticos nem prescrevo nada. Não é terapia médica. Adapto-me ao que é, ao que a situação pede — e avançamos ao seu ritmo.</p>
+      </div>
+
+    </div>
+
+    <!-- CITATIONS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(20,20,20,0.10);">
+      <div style="background:#F7F3EE;padding:2.5rem 2rem;">
+        <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:1rem;color:#2E2825;line-height:1.8;">«Um acompanhante que lhe diz o que fazer torna-o dependente. Um acompanhante que o ajuda a ver torna-o autónomo.»</p>
+      </div>
+      <div style="background:#F7F3EE;padding:2.5rem 2rem;">
+        <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:1rem;color:#2E2825;line-height:1.8;">«Compreender não é desculpar. E acusar nunca libertou ninguém.»</p>
+      </div>
+    </div>
+
+    <!-- ENGAGEMENT -->
+    <div style="margin-top:2rem;text-align:center;padding:2rem;">
+      <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:1.1rem;color:#7E4D2A;">«Não é um argumento de venda. É um compromisso.»</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CAIXA DE FERRAMENTAS -->
+<section id="outils" style="background:linear-gradient(160deg,#EDDCD0 0%,#EDDCD0 100%);padding:4rem 3rem;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(219,189,168,0.50),transparent);"></div>
+  <div class="outils-grille" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:0.62fr 1fr 1fr;gap:3rem;align-items:center;">
+
+    <!-- l'apercu du document : on montre ce qu'on promet -->
+    <figure style="margin:0;">
+      <img src="img/outils-apercu.webp" alt="Pré-visualização do documento — 5 perguntas a fazer a um profissional, em francês e em português" loading="lazy" width="440" height="550"
+           style="display:block;width:100%;height:auto;border-radius:6px;border:1px solid rgba(126,77,42,0.30);box-shadow:0 18px 44px rgba(119,103,98,0.22);">
+    </figure>
+
+    <div>
+      <p style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#7E5C24;font-weight:500;margin-bottom:1rem;">Gratuit</p>
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:#2E2825;line-height:1.3;margin-bottom:1.25rem;">Receba a minha<br><em style="color:#7E4D2A;">caixa de ferramentas.</em></h2>
+      <p style="font-size:0.9rem;font-weight:300;color:#3C352F;line-height:1.8;margin-bottom:1.25rem;">O campo do acompanhamento é pouco regulado. Estas cinco perguntas dão-lhe com que escolher em confiança — e proteger-se.</p>
+      <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.6;padding-left:1.1rem;position:relative;margin-bottom:1.25rem;"><span style="position:absolute;left:0;color:#7E4D2A;">·</span>As 5 perguntas a fazer antes de escolher um profissional — eu incluída.</p>
+      <p style="font-size:0.82rem;font-weight:300;color:#4A423D;line-height:1.6;font-style:italic;">Cartão bilingue FR &amp; PT · Gratuito · Imediato</p>
+    </div>
+
+    <div><form id="leadForm" style="display:flex;flex-direction:column;gap:0.75rem;">
+        <input type="text" id="lmPrenom" placeholder="O seu nome *" required style="background:rgba(119,103,98,0.096);border:1px solid rgba(119,103,98,0.240);color:var(--creme);padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box;" onfocus="this.style.borderColor='rgba(126,77,42,0.45)'" onblur="this.style.borderColor='rgba(119,103,98,0.240)'" aria-label="O seu nome">
+        <input type="email" id="lmEmail" placeholder="O seu email *" required style="background:rgba(119,103,98,0.096);border:1px solid rgba(119,103,98,0.240);color:var(--creme);padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box;" onfocus="this.style.borderColor='rgba(126,77,42,0.45)'" onblur="this.style.borderColor='rgba(119,103,98,0.240)'" aria-label="O seu email">
+        <button type="submit" style="border-radius:8px;background:var(--cta);color:var(--cta-ink);padding:1rem 2rem;font-family:Outfit,sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;border:none;cursor:pointer;width:100%;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Receber a caixa de ferramentas →</button>
+        <p style="font-size:0.72rem;color:#4A423D;text-align:center;line-height:1.5;">Sem spam. Os seus dados não são transmitidos a terceiros.<br>Pode cancelar a subscrição a qualquer momento.</p>
+      </form>
+      <div id="lmSuccess" style="display:none;text-align:center;padding:1.5rem 0;">
+        <p style="font-family:'Libre Baskerville',serif;font-size:1.1rem;color:#7E4D2A;margin-bottom:0.5rem;">Obrigada!</p>
+        <p style="font-size:0.88rem;color:#3C352F;line-height:1.7;margin-bottom:1.25rem;">A sua caixa de ferramentas está pronta.</p>
+        <a href="boite-a-outils.pdf" download style="display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--cta);color:var(--cta-ink);padding:1rem 2rem;font-family:Outfit,sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;">Descarregar o PDF →</a>
+      </div>
+      </div></div>
+  </div>
+</section>
+
+
+<!-- LECTURES MASQUÉ -->
+
+
+<!-- LEAD MAGNET MASQUÉ -->
+<div style="display:none;">
+<!-- LEAD MAGNET -->
+
+</div>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = document.getElementById('leadForm');
+  /* on montre le document quoi qu'il arrive : promettre un document et le
+     retenir parce qu'une requete a echoue serait le pire des deux mondes. */
+  function remettre(){
+    f.style.display = 'none';
+    document.getElementById('lmSuccess').style.display = 'block';
+  }
+  var d = new FormData();
+  d.append('prenom', document.getElementById('lmPrenom').value);
+  d.append('email',  document.getElementById('lmEmail').value);
+  d.append('_subject', 'Caixa de ferramentas — novo pedido');
+  d.append('origine', 'boite-a-outils');
+  fetch('https://formspree.io/f/mrpglqow', {
+    method: 'POST', body: d, headers: {'Accept': 'application/json'}
+  }).then(remettre).catch(remettre);
+});
+</script>
+
+<div class="gold-line"></div>
+
+
+<!-- FAQ -->
+<section class="s" id="faq">
+  <div class="s-inner">
+    <p class="eyebrow">Perguntas frequentes</p>
+    <h2 class="s-title">As perguntas<br><em>que me fazem.</em></h2>
+    <div style="display:flex;flex-direction:column;gap:1px;background:rgba(119,103,98,0.096);margin-top:2rem;">
+      <details open style="background:var(--ardoise);padding:1.5rem 2rem;">
+        <summary style="font-size:0.9rem;font-weight:500;color:var(--creme);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Qual é a diferença entre coaching e constelação?<span style="color:var(--or);font-size:1.2rem;">+</span></summary>
+        <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.75;margin-top:1rem;">O coaching trabalha principalmente no presente — clarificar uma direção, desenvolver recursos, passar à ação. A constelação trabalha o sistema: explora o que vem de mais longe, as dinâmicas familiares ou organizacionais que influenciam sem que tenhamos consciência disso. Os dois complementam-se frequentemente.</p>
+      </details>
+      <details style="background:var(--ardoise);padding:1.5rem 2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <summary style="font-size:0.9rem;font-weight:500;color:var(--creme);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">É preciso ter um problema específico para vir?<span style="color:var(--or);font-size:1.2rem;">+</span></summary>
+        <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.75;margin-top:1rem;">Não necessariamente. Muitas pessoas vêm com um sentimento difuso — algo que bloqueia, que se repete, que não se desbloqueia apesar de todos os esforços. É suficiente. Não é preciso compreender tudo antes de começar.</p>
+      </details>
+      <details style="background:var(--ardoise);padding:1.5rem 2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <summary style="font-size:0.9rem;font-weight:500;color:var(--creme);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">As sessões são em francês ou em português?<span style="color:var(--or);font-size:1.2rem;">+</span></summary>
+        <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.75;margin-top:1rem;">Nas duas. Trabalho fluentemente em português (europeu) e em francês. O inglês e o espanhol estão disponíveis sob consulta.</p>
+      </details>
+      <details style="background:var(--ardoise);padding:1.5rem 2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <summary style="font-size:0.9rem;font-weight:500;color:var(--creme);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Trabalha online?<span style="color:var(--or);font-size:1.2rem;">+</span></summary>
+        <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.75;margin-top:1rem;">Sim — o coaching individual e alguns formatos de grupo fazem-se online (Zoom). As constelações são de preferência presenciais, mas formatos híbridos são possíveis conforme as necessidades.</p>
+      </details>
+      <details style="background:var(--ardoise);padding:1.5rem 2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <summary style="font-size:0.9rem;font-weight:500;color:var(--creme);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Como decorre uma primeira conversa?<span style="color:var(--or);font-size:1.2rem;">+</span></summary>
+        <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.75;margin-top:1rem;">Uma chamada de 20 minutos, sem compromisso, para que possa fazer as suas perguntas e eu perceba o que está a atravessar. Se o formato corresponder, construímos o seguimento juntos.</p>
+      </details>
+      <details style="background:var(--ardoise);padding:1.5rem 2rem;border-top:1px solid rgba(119,103,98,0.096);">
+        <summary style="font-size:0.9rem;font-weight:500;color:var(--creme);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">Posso parar a qualquer momento?<span style="color:var(--or);font-size:1.2rem;">+</span></summary>
+        <p style="font-size:0.85rem;font-weight:300;color:#3C352F;line-height:1.75;margin-top:1rem;">Sim. Sem condição, sem justificação. É um direito, não um favor concedido.</p>
+      </details>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--cta);color:var(--cta-ink);padding:0.9rem 2rem;font-family:Outfit,sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:8px;">Fazer a minha pergunta →</a>
+    </div>
+  </div>
+</section>
+
+<div class="gold-line"></div>
+
+<!-- CTA + FORMULAIRE -->
+<section class="s" id="contact">
+  <div class="s-inner">
+    <p class="eyebrow">Entremos em contacto</p>
+    <h2 class="s-title">Alguma dúvida?<br><em>Mais informações.</em></h2>
+    <p class="s-desc">Uma chamada de 20 minutos, sem compromisso. Para verificar se o formato lhe corresponde e reservar o seu lugar se for o certo.</p>
+      <p style="text-align:center;font-size:0.82rem;font-weight:300;color:#4A423D;line-height:1.7;margin:-0.5rem auto 2.5rem;max-width:620px;">Sediada entre <strong style="font-weight:500;">Avignon</strong> (França) e <strong style="font-weight:500;">Olhão</strong> (Algarve, Portugal) — e desloco-me.</p>
+
+    <p style="text-align:center;font-size:0.8rem;color:#63594F;margin-bottom:2rem;">Deixe-me uma mensagem</p>
+
+    <div style="display:flex;gap:1rem;justify-content:center;margin-bottom:2rem;">
+      <button id="btn-particulier" onclick="" style="background:var(--cta);color:var(--cta-ink);border:1px solid var(--cta);padding:0.65rem 1.5rem;font-family:Outfit,sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;">👤 Particular</button>
+      <button id="btn-entreprise" onclick="" style="background:transparent;color:var(--cta);border:1px solid var(--cta);padding:0.65rem 1.5rem;font-family:Outfit,sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;">🏢 Empresa</button>
+    </div>
+
+    <form id="contactForm" action="https://formspree.io/f/mrpglqow" method="POST" style="max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <input type="text" name="prenom" placeholder="Prénom *" required style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Prénom">
+        <input type="text" name="nom" placeholder="Nom *" required style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Nom">
+      </div>
+      <div id="champEmpresa" style="display:none;">
+        <input type="text" name="entreprise" placeholder="Empresa / Organização" style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;width:100%;box-sizing:border-box;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Empresa / Organização">
+        <input type="text" name="fonction" placeholder="Função · o seu papel" style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;width:100%;box-sizing:border-box;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Função">
+      </div>
+      <input type="email" name="email" placeholder="Email *" required style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Email">
+      <input type="tel" name="telephone" placeholder="Téléphone" style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Téléphone">
+
+      <label style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:#63594F;font-weight:500;">O que lhe interessa *</label>
+
+      <div id="offres-particulier" style="display:flex;flex-direction:column;gap:0.5rem;">
+        <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="parcours-groupe" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">01 · Percurso de transição <span style="color:#63594F;font-size:0.75rem;">(1 a 8 meses)</span></span></label>
+        <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="ateliers-constellations-ic" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">02 · Constelações familiares &amp; sistémicas</span></label>
+        <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="stages-thematiques" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">03 · Workshops de Inteligência Coletiva (IC)</span></label>
+        <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="formation" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">04 · Formação para a minha organização — RPS, soft skills, comunicação</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="coaching-individuel" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Coaching individual <span style="color:#63594F;font-size:0.75rem;">(sob consulta)</span></span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="je-ne-sais-pas" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Ainda não sei — gostaria de falar</span></label>
+      </div>
+
+      <div id="offres-entreprise" style="display:none;flex-direction:column;gap:0.5rem;">
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="formation-qvt" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Formação — Qualidade de vida no trabalho (QVT)</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="formation-rps" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Formação — Prevenção dos riscos psicossociais (RPS)</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="formation-soft-skills" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Formação — Soft skills</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="formation-communication" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Formação — Comunicação</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="intelligence-collective" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Facilitação de workshops em inteligência coletiva (IC)</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="coaching-managers" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Coaching de gestores</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="vision-valeurs" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Visão comum &amp; missão da empresa</span></label>
+                <label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;padding:0.75rem 1rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="checkbox" name="offre" value="autre-entreprise" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">Outro — especificar na mensagem</span></label>
+      </div>
+
+      <textarea name="message" placeholder="A sua mensagem *" required rows="4" style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;resize:vertical;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="A sua mensagem"></textarea>
+
+      <label style="display:flex;align-items:flex-start;gap:0.75rem;cursor:pointer;font-size:0.78rem;color:#63594F;line-height:1.5;">
+        <input type="checkbox" required style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;margin-top:2px;">
+        <span>Aceito que os meus dados sejam utilizados apenas para responder ao meu pedido, em conformidade com a <a href="#rgpd" style="color:#7E4D2A;">política de privacidade</a>.</span>
+      </label>
+
+      <button type="submit" style="border-radius:8px;background:var(--cta);color:var(--cta-ink);padding:1.1rem 2rem;font-family:Outfit,sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;border:none;cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Enviar a minha mensagem →</button>
+
+      <p style="text-align:center;font-size:0.75rem;color:#63594F;">Resposta em 48h · Confidencialidade garantida · Sem compromisso</p>
+      <p id="formMsg" style="display:none;text-align:center;color:#7E4D2A;font-size:0.85rem;">Mensagem enviada — respondo-lhe em 48h.</p>
+    </form>
+
+    <div style="margin-top:3rem;text-align:center;display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;">
+      <span style="font-size:0.85rem;color:#63594F;">📞 +33 6 27 41 45 78</span>
+    </div>
+  </div>
+</section>
+
+<!-- MENTIONS LÉGALES -->
+<section id="photos" style="background:#EDDCD0;border-top:1px solid rgba(119,103,98,0.120);padding:2rem 3rem;">
+  <div class="mentions-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;align-items:start;">
+    <div>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:0 0 0.6rem;">Menções legais</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Annabel Barra — empresária em nome individual, diretora da publicação.<br>945 Chemin des Crottes, Hameau, 84190 Beaumes-de-Venise, França.<br>NIF 223 550 370 (Portugal) · SIRET 890 379 514 00023.<br><a href="mailto:annabeljbarra@gmail.com" style="color:#7E4D2A;text-decoration:underline;text-underline-offset:2px;">annabeljbarra@gmail.com</a> · +33 6 27 41 45 78.<br>Alojamento: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, Estados Unidos.</p>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:1.25rem 0 0.6rem;">Organismo de formação</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Declaração de atividade de formação registada sob o número <strong style="font-weight:500;">93 84 05763 84</strong> junto do prefeito da região Provence-Alpes-Côte d'Azur (França). Este registo não constitui uma aprovação do Estado.</p>
+    </div>
+    <div>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:0 0 0.6rem;">Mediação de consumo</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Litígio não resolvido relativo à atividade em França: recurso gratuito ao mediador <strong style="font-weight:500;">CM2C</strong> — Centre de la Médiation de la Consommation de Conciliateurs de Justice, 49 rue de Ponthieu, 75008 Paris · <a href="https://www.cm2c.net" target="_blank" rel="noopener" style="color:#7E4D2A;text-decoration:underline;text-underline-offset:2px;">cm2c.net</a> (art. L.616-1 do Código do Consumo francês).</p>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:1.25rem 0 0.6rem;">Natureza dos acompanhamentos</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">As constelações e o coaching são abordagens de desenvolvimento pessoal — sem diagnóstico nem tratamento médico. Qualquer perturbação psíquica deve ser seguida por um médico.</p>
+    </div>
+    <div>
+      <p id="rgpd" class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:0 0 0.6rem;">Dados pessoais · RGPD</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;"><b style="font-weight:500;">Responsável:</b> Annabel Barra. Os dados do formulário (nome, e-mail, telefone, mensagem) servem apenas para responder ao seu pedido, passam pelo Formspree (Estados Unidos, cláusulas contratuais-tipo) e são eliminados 3 anos após a última troca. Sem venda nem transmissão comercial. Acesso, retificação, apagamento, limitação, portabilidade: escreva-me. Reclamação junto da CNPD (Portugal) ou da CNIL (França). Este site não utiliza cookies.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('btn-particulier').addEventListener('click', function(){
+    document.getElementById('btn-particulier').style.background='var(--cta)';
+    document.getElementById('btn-particulier').style.color='var(--cta-ink)';
+    document.getElementById('btn-entreprise').style.background='transparent';
+    document.getElementById('btn-entreprise').style.color='var(--cta)';
+    document.getElementById('champEmpresa').style.display='none';
+    document.getElementById('offres-particulier').style.display='flex';
+    document.getElementById('offres-entreprise').style.display='none';
+  });
+  document.getElementById('btn-entreprise').addEventListener('click', function(){
+    document.getElementById('btn-entreprise').style.background='var(--cta)';
+    document.getElementById('btn-entreprise').style.color='var(--cta-ink)';
+    document.getElementById('btn-particulier').style.background='transparent';
+    document.getElementById('btn-particulier').style.color='var(--cta)';
+    document.getElementById('champEmpresa').style.display='grid';
+    document.getElementById('offres-particulier').style.display='none';
+    document.getElementById('offres-entreprise').style.display='flex';
+  });
+</script>
+
+<!-- CTA FLOTTANT DISCRET -->
+<div id="floatingCTA" style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;opacity:0;transition:opacity 0.4s;pointer-events:none;">
+  <a href="https://calendly.com/annabeljbarra/15min" target="_blank" style="display:flex;align-items:center;gap:0.6rem;background:var(--cta);color:var(--cta-ink);padding:0.7rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;box-shadow:0 4px 20px rgba(119,103,98,0.18);white-space:nowrap;">📅 Marcar uma chamada</a>
+</div>
+<script>
+  (function(){
+    const cta = document.getElementById('floatingCTA');
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 400){ cta.style.opacity='1'; cta.style.pointerEvents='auto'; }
+      else { cta.style.opacity='0'; cta.style.pointerEvents='none'; }
+    });
+  })();
+</script>
+
+</div><!-- /.page -->
+
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   LE CARROUSEL DE TÉMOIGNAGES DÉFILE SEUL
+   Il pilote les points du carrousel existant plutôt que de dupliquer sa
+   logique : une seule source de vérité pour la position.
+   Il s'arrête quand on survole, quand on tabule dedans, quand l'onglet
+   passe en arrière-plan, quand la section n'est pas à l'écran, et
+   définitivement si le visiteur a demandé moins d'animations.
+   Une action manuelle le suspend dix secondes : on ne reprend pas la
+   main sur quelqu'un qui vient de la prendre.
+   ═══════════════════════════════════════════════════════════ */
+(function(){
+  var track = document.getElementById('track');
+  var dots  = document.getElementById('dots');
+  if (!track || !dots) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var zone = track.closest('section') || track.parentNode;
+  var pause = false, visible = true, minuteur = null, auto = false;
+
+  function suivant(){
+    var d = dots.children;
+    if (d.length < 2) return;
+    var i = 0;
+    for (var k = 0; k < d.length; k++) if (d[k].className.indexOf('active') > -1) i = k;
+    /* le clic programme remonte jusqu'au conteneur des points, ou est
+       branchee la mise en pause manuelle : ce drapeau evite que le
+       carrousel se suspende lui-meme a chaque avance. */
+    auto = true;
+    d[(i + 1) % d.length].click();
+    auto = false;
+  }
+  function demarrer(){ arreter(); minuteur = setInterval(function(){
+    if (!pause && visible && !document.hidden) suivant();
+  }, 6000); }
+  function arreter(){ if (minuteur) clearInterval(minuteur); minuteur = null; }
+  function suspendre(){ if (auto) return; arreter(); setTimeout(demarrer, 10000); }
+
+  zone.addEventListener('mouseenter', function(){ pause = true; });
+  zone.addEventListener('mouseleave', function(){ pause = false; });
+  zone.addEventListener('focusin',    function(){ pause = true; });
+  zone.addEventListener('focusout',   function(){ pause = false; });
+  dots.addEventListener('click', suspendre);
+  ['prev','next'].forEach(function(id){
+    var b = document.getElementById(id);
+    if (b) b.addEventListener('click', suspendre);
+  });
+  if (window.IntersectionObserver) {
+    new IntersectionObserver(function(e){ visible = e[0].isIntersecting; },
+                             {threshold: 0.2}).observe(zone);
+  }
+  demarrer();
+})();
+</script>
+</body>
+</html>
