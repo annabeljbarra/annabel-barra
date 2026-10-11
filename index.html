@@ -8,7 +8,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta name="robots" content="index, follow">
-<meta name="version" content="v50-ic-annule">
+<meta name="version" content="v51-pied-de-page">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://annabeljbarra.github.io/annabel-barra/">
 <link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/">
@@ -1595,6 +1595,9 @@
   #photos .mentions-grid > div > p:first-child { color: #c9a96e !important; }
   /* le corps du texte */
   #photos .mentions-grid p { color: rgba(250,246,240,0.72) !important; }
+  /* V51 : l'intertitre est desormais marque par sa classe, et non par
+     sa position — une colonne peut en porter deux. */
+  #photos .mentions-grid p.mt { color: #c9a96e !important; }
   #photos .mentions-grid > div > p:first-child { color: #c9a96e !important; }
   #photos a { color: #d9be8a !important; }
   #photos a:hover { color: #faf6f0 !important; }
@@ -3064,20 +3067,20 @@ document.getElementById('leadForm').addEventListener('submit', function(e){
 <section id="photos" style="background:#EDDCD0;border-top:1px solid rgba(119,103,98,0.120);padding:2rem 3rem;">
   <div class="mentions-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;align-items:start;">
     <div>
-      <p style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin-bottom:0.6rem;">Mentions légales</p>
-      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Annabel Barra · Auto-entreprise · Siège : 945 Chemin des Crottes, Hameau, 84190 Beaumes-de-Venise, France · SIRET 890 379 514 00023 · NIF 223 550 370 (Portugal) · <a href="mailto:annabeljbarra@gmail.com" style="color:#7E4D2A;text-decoration:underline;text-underline-offset:2px;">annabeljbarra@gmail.com</a> · +33 6 27 41 45 78 · Directrice de la publication : Annabel Barra · Hébergement : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
-      <p style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:1.25rem 0 0.6rem;">Organisme de formation</p>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:0 0 0.6rem;">Mentions légales</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Annabel Barra — auto-entreprise, directrice de la publication.<br>945 Chemin des Crottes, Hameau, 84190 Beaumes-de-Venise, France.<br>SIRET 890 379 514 00023 · NIF 223 550 370 (Portugal).<br><a href="mailto:annabeljbarra@gmail.com" style="color:#7E4D2A;text-decoration:underline;text-underline-offset:2px;">annabeljbarra@gmail.com</a> · +33 6 27 41 45 78.<br>Hébergeur : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:1.25rem 0 0.6rem;">Organisme de formation</p>
       <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Déclaration d'activité enregistrée sous le numéro <strong style="font-weight:500;">93 84 05763 84</strong> auprès du préfet de région Provence-Alpes-Côte d'Azur. Cet enregistrement ne vaut pas agrément de l'État.</p>
-      <p style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:1.25rem 0 0.6rem;">Médiation de la consommation</p>
-      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">En cas de litige non résolu, vous pouvez recourir gratuitement au médiateur <strong style="font-weight:500;">CM2C</strong> — Centre de la Médiation de la Consommation de Conciliateurs de Justice, 49 rue de Ponthieu, 75008 Paris · <a href="https://www.cm2c.net" target="_blank" rel="noopener" style="color:#7E4D2A;text-decoration:underline;text-underline-offset:2px;">cm2c.net</a> (article L.616-1 du Code de la consommation).</p>
     </div>
     <div>
-      <p style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin-bottom:0.6rem;">Nature des accompagnements</p>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:0 0 0.6rem;">Médiation de la consommation</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Litige non résolu : recours gratuit au médiateur <strong style="font-weight:500;">CM2C</strong> — Centre de la Médiation de la Consommation de Conciliateurs de Justice, 49 rue de Ponthieu, 75008 Paris · <a href="https://www.cm2c.net" target="_blank" rel="noopener" style="color:#7E4D2A;text-decoration:underline;text-underline-offset:2px;">cm2c.net</a> (art. L.616-1 du Code de la consommation).</p>
+      <p class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:1.25rem 0 0.6rem;">Nature des accompagnements</p>
       <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;">Les constellations et le coaching sont des approches de développement personnel — ni diagnostic ni traitement médical. Tout trouble psychique relève d'un médecin reconnu.</p>
     </div>
     <div>
-      <p id="rgpd" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin-bottom:0.6rem;scroll-margin-top:130px;">Données personnelles · RGPD</p>
-      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;"><b style="font-weight:500;">Responsable de traitement :</b> Annabel Barra. Les données du formulaire (nom, e-mail, téléphone, message) servent uniquement à répondre à votre demande et transitent par Formspree (États-Unis, clauses contractuelles types). Elles sont conservées 3 ans après le dernier échange, puis supprimées. Aucune revente ni transmission commerciale. Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité — écrivez-moi. Réclamation possible auprès de la CNIL (France) ou de la CNPD (Portugal). Ce site ne dépose aucun cookie. </p>
+      <p id="rgpd" class="mt" style="font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:#7E4D2A;font-weight:500;margin:0 0 0.6rem;">Données personnelles · RGPD</p>
+      <p style="font-size:0.68rem;font-weight:300;color:#544B45;line-height:1.6;"><b style="font-weight:500;">Responsable :</b> Annabel Barra. Les données du formulaire (nom, e-mail, téléphone, message) servent uniquement à répondre à votre demande, transitent par Formspree (États-Unis, clauses contractuelles types) et sont supprimées 3 ans après le dernier échange. Ni revente ni transmission commerciale. Accès, rectification, effacement, limitation, portabilité : écrivez-moi. Réclamation auprès de la CNIL (France) ou de la CNPD (Portugal). Ce site ne dépose aucun cookie.</p>
     </div>
   </div>
 </section>
