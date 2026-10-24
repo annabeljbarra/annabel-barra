@@ -7,7 +7,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://annabeljbarra.github.io/annabel-barra/pt.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://annabeljbarra.github.io/annabel-barra/"/>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,9 +17,29 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://annabeljbarra.github.io/annabel-barra/pt.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://annabeljbarra.github.io/annabel-barra/"/>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://annabeljbarra.github.io/annabel-barra/entreprises.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/entreprises.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://annabeljbarra.github.io/annabel-barra/empresas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annabeljbarra.github.io/annabel-barra/entreprises.html"/>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://annabeljbarra.github.io/annabel-barra/empresas.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://annabeljbarra.github.io/annabel-barra/entreprises.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://annabeljbarra.github.io/annabel-barra/empresas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://annabeljbarra.github.io/annabel-barra/entreprises.html"/>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
