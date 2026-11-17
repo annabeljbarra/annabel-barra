@@ -2028,18 +2028,18 @@
 
   /* les pastilles du hero : un filet de couleur a gauche de chacune */
   .hero-offer-pill { border-left: 3px solid transparent; }
-  .hero-offers > a:nth-child(1) .hop-tag { color: var(--o1) !important; }
-  .hero-offers > a:nth-child(2) .hop-tag { color: var(--o2) !important; }
-  .hero-offers > a:nth-child(3) .hop-tag { color: var(--o3) !important; }
-  .hero-offers > a:nth-child(4) .hop-tag { color: var(--o4) !important; }
-  .hero-offers > a:nth-child(1) .hop-name { color: var(--o1) !important; }
-  .hero-offers > a:nth-child(2) .hop-name { color: var(--o2) !important; }
-  .hero-offers > a:nth-child(3) .hop-name { color: var(--o3) !important; }
-  .hero-offers > a:nth-child(4) .hop-name { color: var(--o4) !important; }
-  .hero-offers > a:nth-child(1) { border-left-color: var(--o1) !important; }
-  .hero-offers > a:nth-child(2) { border-left-color: var(--o2) !important; }
-  .hero-offers > a:nth-child(3) { border-left-color: var(--o3) !important; }
-  .hero-offers > a:nth-child(4) { border-left-color: var(--o4) !important; }
+  .hero-offers > a:nth-child(1) .hop-tag { color: var(--o4) !important; }
+  .hero-offers > a:nth-child(2) .hop-tag { color: var(--o1) !important; }
+  .hero-offers > a:nth-child(3) .hop-tag { color: var(--o2) !important; }
+  .hero-offers > a:nth-child(4) .hop-tag { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(1) .hop-name { color: var(--o4) !important; }
+  .hero-offers > a:nth-child(2) .hop-name { color: var(--o1) !important; }
+  .hero-offers > a:nth-child(3) .hop-name { color: var(--o2) !important; }
+  .hero-offers > a:nth-child(4) .hop-name { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(1) { border-left-color: var(--o4) !important; }
+  .hero-offers > a:nth-child(2) { border-left-color: var(--o1) !important; }
+  .hero-offers > a:nth-child(3) { border-left-color: var(--o2) !important; }
+  .hero-offers > a:nth-child(4) { border-left-color: var(--o3) !important; }
 
   /* les bandeaux de groupe de l'agenda portent la couleur de leur offre ;
      celui des dates sur demande, qui n'appartient a aucune offre, garde
@@ -2077,10 +2077,10 @@
   #offres .c1 .offre-num { color: rgba(244,123,104,0.13) !important; }
   #offres .c2 .offre-num { color: rgba(57,184,177,0.13) !important; }
   #offres .c3 .offre-num { color: rgba(10,144,66,0.11) !important; }
-  .hero-offers > a:nth-child(1) { border-left-color: var(--o1-marque) !important; }
-  .hero-offers > a:nth-child(2) { border-left-color: var(--o2-marque) !important; }
-  .hero-offers > a:nth-child(3) { border-left-color: var(--o3-marque) !important; }
-  .hero-offers > a:nth-child(4) { border-left-color: var(--o4-marque) !important; }
+  .hero-offers > a:nth-child(1) { border-left-color: var(--o4-marque) !important; }
+  .hero-offers > a:nth-child(2) { border-left-color: var(--o1-marque) !important; }
+  .hero-offers > a:nth-child(3) { border-left-color: var(--o2-marque) !important; }
+  .hero-offers > a:nth-child(4) { border-left-color: var(--o3-marque) !important; }
 
   /* ── le formulaire de contact reprend le code ──
      Chaque case porte le filet de son offre, et la coche elle-même en
@@ -2368,7 +2368,13 @@
   <!-- MILIEU : 3 propositions -->
   <div class="hero-middle">
     <div class="hero-offers">
-      <a href="#offres" style="text-decoration:none;" class="hero-offer-pill active">
+      <a href="entreprises.html" style="text-decoration:none;" class="hero-offer-pill active">
+        <div class="hop-left">
+          <span class="hop-tag" style="color:#67557A;">Entreprises · Équipes · Managers</span>
+          <span class="hop-name" style="color:#67557A;">Accompagnement en entreprise &amp; formations</span>
+        </div>
+      </a>
+      <a href="#offres" style="text-decoration:none;" class="hero-offer-pill">
         <div class="hop-left">
           <span class="hop-tag" style="color:#AB2E1A;">★ Offre principale · 4 mois</span>
           <span class="hop-name">Parcours de transition</span>
@@ -2384,12 +2390,6 @@
         <div class="hop-left">
           <span class="hop-tag" style="color:#136A21;">Présentiel &amp; en ligne</span>
           <span class="hop-name" style="color:#136A21;">Ateliers d'intelligence collective (IC)</span>
-        </div>
-      </a>
-      <a href="entreprises.html" style="text-decoration:none;" class="hero-offer-pill">
-        <div class="hop-left">
-          <span class="hop-tag" style="color:#67557A;">Entreprises · Équipes · Managers</span>
-          <span class="hop-name" style="color:#67557A;">Accompagnement en entreprise &amp; formations</span>
         </div>
       </a>
     </div>
