@@ -2300,23 +2300,26 @@
 <style>
   /* La ligne du metier : une phrase, pas une etiquette. */
   .hero-sub {
-    font-size: 1rem !important;
-    letter-spacing: 0.01em !important;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.005em !important;
     text-transform: none !important;
     color: #6B4E1F !important;
-    line-height: 1.5 !important;
+    line-height: 1.35 !important;
   }
+  .hero-sub { margin-bottom: 0.55rem !important; }
   .hero-metier {
-    margin-top: 0.5rem;
-    font-size: 0.82rem;
-    font-weight: 300;
-    color: #63594F;
-    line-height: 1.6;
-    letter-spacing: 0.01em;
+    margin-top: 0;
+    margin-bottom: 1.15rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+    color: #3C352F;
+    line-height: 1.45;
+    letter-spacing: 0.005em;
   }
   @media (max-width: 480px) {
-    .hero-sub { font-size: 0.92rem !important; }
-    .hero-metier { font-size: 0.78rem; }
+    .hero-sub { font-size: 1.2rem !important; }
+    .hero-metier { font-size: 1.1rem; }
   }
 </style>
 <style>
@@ -2497,32 +2500,7 @@
 </section>
 
 
-<div class="gold-line"></div>
 
-<!-- ACTUALITÉ / À LA UNE — bloc à mettre à jour à chaque nouvelle date -->
-<section class="s" id="actu" style="background:#ECECE8;">
-  <div class="s-inner">
-    <p class="eyebrow">&nbsp;À la une</p>
-    <h2 class="s-title">La prochaine <em>constellation</em>.</h2>
-    <div class="actu-grid">
-      <div class="actu-corps">
-        <span class="actu-badge">Prochaine date à confirmer</span>
-        <h3 class="actu-titre">Constellations familiales <em>&amp; systémiques</em></h3>
-        <p class="actu-accroche">« Quelque chose se rejoue dans votre vie ? »</p>
-        <ul class="actu-infos">
-          <li><b>Prochaine session</b> · matin <i>en français</i> · après-midi <i>en portugais</i></li>
-          <li><b>Lieu</b> · A Fábrica — R. Vasco da Gama 60, Olhão</li>
-          <li><b>Tarif</b> · 70 € représentant · 90 € constellé</li>
-          <li><b>Groupe limité</b></li>
-        </ul>
-        <div class="actu-cta">
-          <a class="btn-primary" href="https://wa.me/33627414578" target="_blank" rel="noopener">Me prévenir par WhatsApp</a>
-          <a class="btn-ghost" href="#contact">Parlons de votre projet</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <div class="gold-line"></div>
 
@@ -2540,7 +2518,7 @@
     <!-- Texte droite -->
     <div style="padding:4rem 3.5rem;display:flex;flex-direction:column;justify-content:center;gap:1.25rem;">
       <p style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#7E4D2A;font-weight:500;">Nomad coach · Facilitation &amp; ingénierie de formation</p>
-      <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;color:#2E2825;line-height:1.85;">Ancienne dirigeante d'entreprise, franco-portugaise. J'accompagne les personnes et les équipes dans leurs transitions depuis plus de 20 ans — avec rigueur, bienveillance, et les outils justes.</p>
+      <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;color:#2E2825;line-height:1.85;">J'ai dirigé avant d'accompagner. Franco-portugaise, j'accompagne les personnes et les équipes dans leurs transitions depuis plus de 20 ans. Sur des sites industriels, en salle de formation, en comité de direction.</p>
       <p style="font-size:0.88rem;font-weight:300;color:#4A423D;line-height:1.7;">Algarve &amp; PACA</p>
       <div style="margin-top:0.5rem;">
         <a href="#ethique" style="display:inline-flex;align-items:center;gap:0.5rem;border:1px solid var(--cta);color:var(--cta);padding:0.75rem 1.5rem;font-family:Outfit,sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:8px;">Mon parcours →</a>
@@ -2793,6 +2771,33 @@
     })();
   </script>
 </section>
+<div class="gold-line"></div>
+
+<!-- ACTUALITÉ / À LA UNE — bloc à mettre à jour à chaque nouvelle date -->
+<section class="s" id="actu" style="background:#ECECE8;">
+  <div class="s-inner">
+    <p class="eyebrow">&nbsp;À la une</p>
+    <h2 class="s-title">La prochaine <em>constellation</em>.</h2>
+    <div class="actu-grid">
+      <div class="actu-corps">
+        <span class="actu-badge">Prochaine date à confirmer</span>
+        <h3 class="actu-titre">Constellations familiales <em>&amp; systémiques</em></h3>
+        <p class="actu-accroche">« Quelque chose se rejoue dans votre vie ? »</p>
+        <ul class="actu-infos">
+          <li><b>Prochaine session</b> · matin <i>en français</i> · après-midi <i>en portugais</i></li>
+          <li><b>Lieu</b> · A Fábrica — R. Vasco da Gama 60, Olhão</li>
+          <li><b>Tarif</b> · 70 € représentant · 90 € constellé</li>
+          <li><b>Groupe limité</b></li>
+        </ul>
+        <div class="actu-cta">
+          <a class="btn-primary" href="https://wa.me/33627414578" target="_blank" rel="noopener">Me prévenir par WhatsApp</a>
+          <a class="btn-ghost" href="#contact">Parlons de votre projet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="gold-line"></div>
 
 
