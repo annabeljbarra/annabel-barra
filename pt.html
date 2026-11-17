@@ -2024,16 +2024,16 @@
   .hero-offer-pill { border-left: 3px solid transparent; }
   .hero-offers > a:nth-child(1) .hop-tag { color: var(--o4) !important; }
   .hero-offers > a:nth-child(2) .hop-tag { color: var(--o1) !important; }
-  .hero-offers > a:nth-child(3) .hop-tag { color: var(--o2) !important; }
-  .hero-offers > a:nth-child(4) .hop-tag { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(3) .hop-tag { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(4) .hop-tag { color: var(--o2) !important; }
   .hero-offers > a:nth-child(1) .hop-name { color: var(--o4) !important; }
   .hero-offers > a:nth-child(2) .hop-name { color: var(--o1) !important; }
-  .hero-offers > a:nth-child(3) .hop-name { color: var(--o2) !important; }
-  .hero-offers > a:nth-child(4) .hop-name { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(3) .hop-name { color: var(--o3) !important; }
+  .hero-offers > a:nth-child(4) .hop-name { color: var(--o2) !important; }
   .hero-offers > a:nth-child(1) { border-left-color: var(--o4) !important; }
   .hero-offers > a:nth-child(2) { border-left-color: var(--o1) !important; }
-  .hero-offers > a:nth-child(3) { border-left-color: var(--o2) !important; }
-  .hero-offers > a:nth-child(4) { border-left-color: var(--o3) !important; }
+  .hero-offers > a:nth-child(3) { border-left-color: var(--o3) !important; }
+  .hero-offers > a:nth-child(4) { border-left-color: var(--o2) !important; }
 
   /* les bandeaux de groupe de l'agenda portent la couleur de leur offre ;
      celui des dates sur demande, qui n'appartient a aucune offre, garde
@@ -2073,8 +2073,8 @@
   #offres .c3 .offre-num { color: rgba(10,144,66,0.11) !important; }
   .hero-offers > a:nth-child(1) { border-left-color: var(--o4-marque) !important; }
   .hero-offers > a:nth-child(2) { border-left-color: var(--o1-marque) !important; }
-  .hero-offers > a:nth-child(3) { border-left-color: var(--o2-marque) !important; }
-  .hero-offers > a:nth-child(4) { border-left-color: var(--o3-marque) !important; }
+  .hero-offers > a:nth-child(3) { border-left-color: var(--o3-marque) !important; }
+  .hero-offers > a:nth-child(4) { border-left-color: var(--o2-marque) !important; }
 
   /* ── le formulaire de contact reprend le code ──
      Chaque case porte le filet de son offre, et la coche elle-même en
@@ -2281,6 +2281,45 @@
     .lang-switcher { padding: 0.3rem 0.45rem !important; }
   }
 </style>
+<style>
+  /* Les trois boutons du bas de haut de page : le rendez-vous sur sa
+     ligne, les deux portes a egalite en dessous. */
+  .hero-cta-group { justify-content: center; }
+  .hero-cta-group .btn-primary { flex: 1 1 100% !important; }
+  .hero-cta-group .btn-ghost { flex: 1 1 calc(50% - 0.5rem) !important; }
+  @media (max-width: 480px) {
+    .hero-cta-group .btn-ghost { flex: 1 1 100% !important; }
+  }
+</style>
+<style>
+  /* La ligne du metier : une phrase, pas une etiquette. */
+  .hero-sub {
+    font-size: 1rem !important;
+    letter-spacing: 0.01em !important;
+    text-transform: none !important;
+    color: #6B4E1F !important;
+    line-height: 1.5 !important;
+  }
+  .hero-metier {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    font-weight: 300;
+    color: #63594F;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  @media (max-width: 480px) {
+    .hero-sub { font-size: 0.92rem !important; }
+    .hero-metier { font-size: 0.78rem; }
+  }
+</style>
+<style>
+  /* Sur telephone, la barre du haut defile avec la page — sinon elle
+     recouvre le nom. Les deux langues se comportent pareil. */
+  @media (max-width: 768px) {
+    #nav { position: relative !important; }
+  }
+</style>
 </head>
 <body>
 
@@ -2302,10 +2341,10 @@
     </button>
     <ul class="nav-links">
       <button class="nav-close" onclick="navMenu(false)" aria-label="Fechar">✕</button>
-      <li><a href="#offres" style="color:var(--or);">Percursos</a></li>
-      <li><a href="#ateliers">Agenda</a></li>
+      <li><a href="empresas.html" style="color:#67557A;font-weight:600;">Empresa &amp; formação</a></li>
       <li><a href="#qui">O Meu ADN</a></li>
-      <li><a href="empresas.html" style="color:#67557A;">Empresa &amp; formação</a></li>
+      <li><a href="#offres">Percursos</a></li>
+      <li><a href="#ateliers">Agenda</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
@@ -2351,11 +2390,11 @@
 
   <!-- HAUT : identité centrée -->
   <div class="hero-top">
-    <p class="hero-location">🇫🇷 &nbsp;Français · 🇵🇹 &nbsp;Português · <a href="#contact" style="color:inherit;text-decoration:none;border-bottom:1px solid currentColor;">🇬🇧 &nbsp;English · 🇪🇸 &nbsp;Español — sob consulta</a></p>
     <h1 class="hero-name">
       <a href="#qui" style="text-decoration:none;color:inherit;">Annabel<br><em>Barra</em></a><span class="sr-only"> — vinte anos a fazer trabalhar grupos e equipas: em empresa, em formação, em transição profissional. Prevenção, riscos psicossociais, coesão, facilitação. França &amp; Portugal.</span>
     </h1>
     <p class="hero-sub">Vinte anos a fazer trabalhar grupos e equipas</p>
+    <p class="hero-metier">Formadora, coach e facilitadora · prevenção, riscos psicossociais, coesão de equipa</p>
     <p class="hero-tagline">Sozinhos sobrevivemos.<br>Juntos transformamo-nos.</p>
   </div>
 
@@ -2376,14 +2415,14 @@
       </a>
       <a href="#offres" style="text-decoration:none;" class="hero-offer-pill">
         <div class="hop-left">
-          <span class="hop-tag" style="color:#17607A;">Sistémico · Familiar · Simbólico</span>
-          <span class="hop-name" style="color:#17607A;">Constelações familiares &amp; sistémicas</span>
+          <span class="hop-tag" style="color:#136A21;">Presencial &amp; online</span>
+          <span class="hop-name" style="color:#136A21;">Workshops de Inteligência Coletiva (IC)</span>
         </div>
       </a>
       <a href="#offres" style="text-decoration:none;" class="hero-offer-pill">
         <div class="hop-left">
-          <span class="hop-tag" style="color:#136A21;">Presencial &amp; online</span>
-          <span class="hop-name" style="color:#136A21;">Workshops de Inteligência Coletiva (IC)</span>
+          <span class="hop-tag" style="color:#17607A;">Sistémico · Familiar · Simbólico</span>
+          <span class="hop-name" style="color:#17607A;">Constelações familiares &amp; sistémicas</span>
         </div>
       </a>
     </div>
@@ -2394,7 +2433,8 @@
     <p class="hero-desc">O que faço: acompanhar pessoas, grupos e equipas no que se move, no que bloqueia, no que procura ser dito.</p>
     <div class="hero-cta-group">
       <a href="https://calendly.com/annabeljbarra/15min" target="_blank" class="btn-primary">Reservar 15 minutos</a>
-      <a href="#offres" class="btn-ghost">Descobrir as ofertas</a>
+      <a href="empresas.html" class="btn-ghost">Para as organizações</a>
+      <a href="#offres" class="btn-ghost">Para si</a>
   </div>
 </section>
 
@@ -2574,8 +2614,31 @@
         </div>
       </div>
 
-      <div class="offre-card c2">
+      <div class="offre-card c3">
         <div class="offre-num">02</div>
+        <div class="offre-body">
+          <div class="offre-tag">Presencial &amp; online</div>
+          <p class="offre-accroche">A inteligência está no grupo.</p>
+          <h3 class="offre-name">Workshops <em>IC</em></h3>
+          <p class="offre-promise">Workshops participativos para fazer emergir a inteligência coletiva e avançar juntos.</p>
+          <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:0.8rem;color:#136A21;line-height:1.7;margin-bottom:1.25rem;">↳ Tomada de decisão · Coesão · Bloqueios coletivos · Visão partilhada</p>
+          <ul class="offre-list">
+              <li>Formato de meio dia a 2 dias — co-desenvolvimento, facilitação</li>
+              <li>No Algarve, em PACA, ou em deslocação sob consulta</li>
+              <li>Grupos constituídos e organizações</li>
+          </ul>
+        </div>
+        <div class="offre-footer">
+          <div class="offre-prix-area">
+            <div style="font-family:'Libre Baskerville',serif;font-size:1.6rem;font-weight:400;color:var(--creme);line-height:1.1;margin-bottom:0.35rem;">Sob consulta</div>
+            <p style="font-size:0.78rem;font-weight:300;color:#4A423D;">— falemos · chamada de 20 min Zoom ou WhatsApp</p>
+          </div>
+          <div class="offre-lieux"><span class="lieu-tag">📍 Algarve &amp; PACA</span><span class="lieu-tag">🌐 Online</span><span class="lieu-tag">📍 Presencial</span><span class="lieu-tag">🌐 Híbrido possível</span></div>
+          <a href="#contact" class="offre-cta">Falemos do seu projeto</a>
+        </div>
+      </div>
+      <div class="offre-card c2">
+        <div class="offre-num">03</div>
         <div class="offre-body">
           <div class="offre-tag">Sistémico · Familiar · Simbólico</div>
           <p class="offre-accroche">O que se repete tem quase sempre uma origem.</p>
@@ -2598,29 +2661,7 @@
         </div>
       </div>
 
-      <div class="offre-card c3">
-        <div class="offre-num">03</div>
-        <div class="offre-body">
-          <div class="offre-tag">Presencial &amp; online</div>
-          <p class="offre-accroche">A inteligência está no grupo.</p>
-          <h3 class="offre-name">Workshops <em>IC</em></h3>
-          <p class="offre-promise">Workshops participativos para fazer emergir a inteligência coletiva e avançar juntos.</p>
-          <p style="font-family:'Libre Baskerville',serif;font-style:italic;font-size:0.8rem;color:#136A21;line-height:1.7;margin-bottom:1.25rem;">↳ Tomada de decisão · Coesão · Bloqueios coletivos · Visão partilhada</p>
-          <ul class="offre-list">
-              <li>Formato de meio dia a 2 dias — co-desenvolvimento, facilitação</li>
-              <li>No Algarve, em PACA, ou em deslocação sob consulta</li>
-              <li>Grupos constituídos e organizações</li>
-          </ul>
-        </div>
-        <div class="offre-footer">
-          <div class="offre-prix-area">
-            <div style="font-family:'Libre Baskerville',serif;font-size:1.6rem;font-weight:400;color:var(--creme);line-height:1.1;margin-bottom:0.35rem;">Sob consulta</div>
-            <p style="font-size:0.78rem;font-weight:300;color:#4A423D;">— falemos · chamada de 20 min Zoom ou WhatsApp</p>
-          </div>
-          <div class="offre-lieux"><span class="lieu-tag">📍 Algarve &amp; PACA</span><span class="lieu-tag">🌐 Online</span><span class="lieu-tag">📍 Presencial</span><span class="lieu-tag">🌐 Híbrido possível</span></div>
-          <a href="#contact" class="offre-cta">Falemos do seu projeto</a>
-        </div>
-      </div>
+      
 
     </div>
   </div>
@@ -3007,6 +3048,15 @@ document.getElementById('leadForm').addEventListener('submit', function(e){
       </div>
       <input type="email" name="email" placeholder="Email *" required style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Email">
       <input type="tel" name="telephone" placeholder="Téléphone" style="background:rgba(20,20,20,0.028);border:1px solid rgba(20,20,20,0.14);color:#2E2825;padding:0.9rem 1.25rem;font-family:Outfit,sans-serif;font-size:0.85rem;outline:none;" onfocus="this.style.borderColor='#8A542E'" onblur="this.style.borderColor='rgba(20,20,20,0.14)'" aria-label="Téléphone">
+
+      <label style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:#63594F;font-weight:500;">Língua da conversa</label>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:0.5rem;">
+        <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer;padding:0.7rem 0.9rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="radio" name="langue" value="fr" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">🇫🇷 Français</span></label>
+        <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer;padding:0.7rem 0.9rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="radio" name="langue" value="pt" checked style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">🇵🇹 Português</span></label>
+        <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer;padding:0.7rem 0.9rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="radio" name="langue" value="en" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">🇬🇧 English</span></label>
+        <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer;padding:0.7rem 0.9rem;border:1px solid rgba(20,20,20,0.11);" onmouseover="this.style.borderColor='rgba(126,77,42,0.40)'" onmouseout="this.style.borderColor='rgba(20,20,20,0.11)'"><input type="radio" name="langue" value="es" style="accent-color:#7E4D2A;width:15px;height:15px;flex-shrink:0;"><span style="font-size:0.82rem;color:#4A423D;">🇪🇸 Español</span></label>
+      </div>
+      <p style="font-size:0.75rem;font-weight:300;color:#63594F;line-height:1.6;margin-top:-0.25rem;">O inglês e o espanhol são sob consulta.</p>
 
       <label style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:#63594F;font-weight:500;">O que lhe interessa *</label>
 
